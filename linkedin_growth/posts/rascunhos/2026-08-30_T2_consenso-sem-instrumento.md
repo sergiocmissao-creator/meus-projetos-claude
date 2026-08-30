@@ -1,0 +1,74 @@
+# RASCUNHO — T2: consenso sem instrumento
+**Criado:** 30/08/2026 · **Território:** Cooperativismo × Governança · **Ângulo:** Missão Coop
+**Fórmula:** §48.8 (notícia + interpretação + implicação) · **Variação:** TESE
+**Status:** 🟡 aguardando micro-caso do Sergio (bloco 8)
+**Janela:** publicar até 04/09/2026
+
+---
+
+O cooperativismo não tem mais um problema de convencimento. Tem um problema de medição.
+
+Vou explicar por que isso saiu da pauta de palestra e entrou na pauta de risco.
+
+Nas últimas semanas, dirigentes dos maiores sistemas de crédito do país disseram publicamente a mesma coisa: o maior risco do setor não é o mercado, não é a tecnologia, não é a concorrência dos bancos. É deixar de ser cooperativa.
+
+Concordo. E acho que já passou da hora de parar por aí.
+
+Porque se todo mundo já concorda com o diagnóstico, o gargalo deixou de ser convencimento.
+
+O setor sabe dizer que identidade importa. Sabe fazer painel sobre isso. Sabe abrir evento com isso.
+
+O que o setor ainda não sabe fazer é responder uma pergunta simples, feita numa reunião de conselho, numa terça-feira à tarde: qual a proporção da nossa base que ainda se percebe dona?
+
+Repare que ninguém trava quando perguntam o índice de inadimplência. Ninguém trava no índice de basileia. Ninguém trava no NPS.
+
+Trava nessa.
+
+E a Lei 5.764/71 é bem direta ao colocar a Assembleia Geral como órgão supremo da sociedade. O poder está formalmente com o dono. O que a lei não garante, e nenhuma lei garante, é que ele saiba disso, queira exercer isso ou tenha condição de exercer isso.
+
+Propriedade formal é jurídica. Propriedade percebida é comportamental. E são coisas diferentes.
+
+Antes que apareça alguém dizendo que isso é tentar transformar cultura em planilha: não é. Cultura não vira número. Mas comportamento de dono vira. Comparecimento vira. Compreensão do balanço vira. Indicação espontânea vira. Disposição de assumir cadeira de conselho vira.
+
+Sob a ótica do dever de diligência, a consequência é incômoda. Se o principal risco declarado do setor não aparece em nenhuma matriz de risco, não tem indicador, não tem meta e não tem dono, então ele não está sendo gerido. Está sendo mencionado.
+
+E o que só é mencionado não disputa orçamento.
+
+<!-- BLOCO 8 — MICRO-CASO. Inserir aqui uma cena real, 1 a 3 linhas, sem nome de
+     cooperativa e sem heroísmo. Uma reunião em que esse número foi pedido e não
+     existia. Ou um voto que discutia crescimento de base sem discutir vínculo.
+     Este é o bloco que mais converte comentário. -->
+
+É por isso que trabalho com conselhos que preferem a pergunta desconfortável ao slide bonito.
+
+Seu conselho tem esse número?
+
+♦️ Lado B da Liderança - o que funciona quando a plateia vai embora.
+#NaMissão
+
+---
+
+## Ficha técnica
+
+**Bloco que carrega o post:** o contraste entre travar e não travar. Inadimplência, basileia
+e NPS todo conselho responde na hora. A pergunta sobre propriedade percebida trava. Esse
+contraste faz o trabalho sem precisar de dado externo.
+
+**Risco de ruído:** alguém pode ler como crítica aos dirigentes que falaram. O texto se
+protege concordando explicitamente com eles antes de avançar. Manter esse "concordo" ao editar.
+
+**Comentário para plantar nos primeiros 90 minutos:**
+> A pergunta que eu não respondi de propósito no post: se esse número não existe hoje,
+> por onde vc começaria a medir? Eu tenho uma resposta, mas queria ouvir antes.
+
+## Checklist da skill
+- [x] Linha 1 nega clichê e cabe numa respiração
+- [x] Inimigo abstrato (a prática de tratar identidade como tema, não como indicador)
+- [x] Sem dado de fonte fraca. Regra técnica no lugar (Lei 5.764/71)
+- [x] Antecipação da objeção ("transformar cultura em planilha")
+- [x] Camada normativa (dever de diligência, matriz de risco)
+- [ ] **Micro-caso real — PENDENTE, só Sergio fornece**
+- [x] Pergunta final respondível em 4 palavras
+- [x] Selo fixo, zero emoji no corpo, sem prêmios
+- [x] ~500 palavras
+- [x] Não nomeia evento, dirigentes nem organizadores
