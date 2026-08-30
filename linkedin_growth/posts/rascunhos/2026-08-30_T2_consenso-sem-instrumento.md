@@ -1,7 +1,7 @@
 # RASCUNHO — T2: consenso sem instrumento
 **Criado:** 30/08/2026 · **Território:** Cooperativismo × Governança · **Ângulo:** Missão Coop
 **Fórmula:** §48.8 (notícia + interpretação + implicação) · **Variação:** TESE
-**Status:** 🟡 aguardando micro-caso do Sergio (bloco 8)
+**Status:** 🟢 completo, pronto para publicar
 **Janela:** publicar até 04/09/2026
 
 ---
@@ -34,10 +34,11 @@ Sob a ótica do dever de diligência, a consequência é incômoda. Se o princip
 
 E o que só é mencionado não disputa orçamento.
 
-<!-- BLOCO 8 — MICRO-CASO. Inserir aqui uma cena real, 1 a 3 linhas, sem nome de
-     cooperativa e sem heroísmo. Uma reunião em que esse número foi pedido e não
-     existia. Ou um voto que discutia crescimento de base sem discutir vínculo.
-     Este é o bloco que mais converte comentário. -->
+Uma vez pedi à diretoria que parasse de trazer só o número. Se veio abaixo da meta, eu quero o motivo, o plano de recuperação e a expectativa de resultado com esse plano. E pedi que isso virasse padrão, não exceção.
+
+Ninguém achou a cobrança estranha. Era sobre meta comercial.
+
+A pergunta que fica é por que a gente nunca cobra a mesma coisa quando o assunto é o vínculo com o dono.
 
 É por isso que trabalho com conselhos que preferem a pergunta desconfortável ao slide bonito.
 
@@ -50,9 +51,9 @@ Seu conselho tem esse número?
 
 ## Ficha técnica
 
-**Bloco que carrega o post:** o contraste entre travar e não travar. Inadimplência, basileia
-e NPS todo conselho responde na hora. A pergunta sobre propriedade percebida trava. Esse
-contraste faz o trabalho sem precisar de dado externo.
+**Bloco que carrega o post:** o micro-caso. Ele prova que o rigor já existe na casa, só que
+aplicado seletivamente. Isso desarma a objeção de que medir vínculo seria exigência exótica:
+é a mesma exigência que já se faz para meta comercial.
 
 **Risco de ruído:** alguém pode ler como crítica aos dirigentes que falaram. O texto se
 protege concordando explicitamente com eles antes de avançar. Manter esse "concordo" ao editar.
@@ -67,8 +68,8 @@ protege concordando explicitamente com eles antes de avançar. Manter esse "conc
 - [x] Sem dado de fonte fraca. Regra técnica no lugar (Lei 5.764/71)
 - [x] Antecipação da objeção ("transformar cultura em planilha")
 - [x] Camada normativa (dever de diligência, matriz de risco)
-- [ ] **Micro-caso real — PENDENTE, só Sergio fornece**
+- [x] Micro-caso real, fornecido pelo Sergio em 30/08
 - [x] Pergunta final respondível em 4 palavras
 - [x] Selo fixo, zero emoji no corpo, sem prêmios
-- [x] ~500 palavras
+- [x] ~560 palavras
 - [x] Não nomeia evento, dirigentes nem organizadores
