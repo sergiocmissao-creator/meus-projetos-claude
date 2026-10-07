@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <rect width="640" height="480" fill="#1B3358"/>
+  <circle cx="320" cy="240" r="170" stroke="#2C4A78" stroke-width="2" stroke-dasharray="6 10"/>
+  <g fill="#F1F4F9">
+    <!-- 8 pessoas em círculo -->
+    <g transform="translate(320 70)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(440 120)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(490 240)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(440 360)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(320 400)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(200 360)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(150 240)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+    <g transform="translate(200 120)"><circle r="18" cy="-6"/><path d="M-30 40a30 30 0 0 1 60 0z"/></g>
+  </g>
+  <!-- chave no centro -->
+  <g transform="translate(320 240) rotate(-35)">
+    <circle cx="-62" cy="0" r="38" stroke="#E0A63E" stroke-width="16"/>
+    <path d="M-24 0H80" stroke="#E0A63E" stroke-width="16" stroke-linecap="round"/>
+    <path d="M52 0v26M76 0v18" stroke="#E0A63E" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

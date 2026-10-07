@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <rect width="640" height="480" fill="#1B3358"/>
+  <g stroke="#2C4A78" stroke-width="1"><path d="M0 120H640M0 240H640M0 360H640M160 0V480M320 0V480M480 0V480"/></g>
+  <!-- robo -->
+  <path d="M250 70v-28" stroke="#F1F4F9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="250" cy="36" r="12" fill="#E0A63E"/>
+  <rect x="150" y="70" width="200" height="150" rx="34" fill="#F1F4F9"/>
+  <rect x="128" y="120" width="22" height="50" rx="8" fill="#9AA9C2"/>
+  <rect x="350" y="120" width="22" height="50" rx="8" fill="#9AA9C2"/>
+  <rect x="176" y="100" width="148" height="70" rx="20" fill="#1B3358"/>
+  <circle cx="218" cy="135" r="13" fill="#E0A63E"/>
+  <circle cx="282" cy="135" r="13" fill="#E0A63E"/>
+  <path d="M215 195h70" stroke="#9AA9C2" stroke-width="8" stroke-linecap="round"/>
+  <rect x="170" y="235" width="160" height="150" rx="26" fill="#C9D2E1"/>
+  <path d="M330 270l60 30" stroke="#C9D2E1" stroke-width="22" stroke-linecap="round"/>
+  <!-- documento com assinatura em branco -->
+  <g transform="translate(380 220) rotate(8)">
+    <rect width="170" height="210" rx="12" fill="#FFFFFF"/>
+    <path d="M24 40h120M24 68h100M24 96h112M24 124h80" stroke="#9AA9C2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M24 178h122" stroke="#1B3358" stroke-width="3" stroke-dasharray="6 6"/>
+    <text x="85" y="168" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#E0A63E" text-anchor="middle">?</text>
+  </g>
+</svg>

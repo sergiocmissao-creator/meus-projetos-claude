@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <rect width="640" height="480" fill="#1B3358"/>
+  <!-- quadro -->
+  <rect x="70" y="60" width="500" height="300" rx="18" fill="#17304F" stroke="#3E5F93" stroke-width="8"/>
+  <!-- palavra CARGO sendo apagada -->
+  <text x="320" y="170" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="8" fill="#9AA9C2" text-anchor="middle" opacity=".55">CARGO</text>
+  <path d="M120 140c80-30 160 30 240-6s120 20 160-10" stroke="#17304F" stroke-width="46" stroke-linecap="round" opacity=".85"/>
+  <!-- palavra nova -->
+  <text x="320" y="290" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="58" letter-spacing="4" fill="#E0A63E" text-anchor="middle">SEGUIDORES</text>
+  <!-- apagador -->
+  <g transform="translate(470 150) rotate(-18)">
+    <rect x="0" y="0" width="120" height="56" rx="10" fill="#E0A63E"/>
+    <rect x="0" y="40" width="120" height="16" rx="6" fill="#F1F4F9"/>
+  </g>
+  <!-- base do quadro -->
+  <path d="M110 372h420" stroke="#3E5F93" stroke-width="10" stroke-linecap="round"/>
+  <rect x="150" y="360" width="60" height="12" rx="4" fill="#F1F4F9"/>
+</svg>

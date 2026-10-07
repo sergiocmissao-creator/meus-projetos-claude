@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+<defs><radialGradient id="g" cx="70%" cy="40%" r="75%"><stop offset="0" stop-color="#244472"/><stop offset="1" stop-color="#13294B"/></radialGradient>
+<pattern id="d" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#2C4A78"/></pattern></defs>
+<rect width="1200" height="675" fill="url(#g)"/><rect width="1200" height="675" fill="url(#d)" opacity=".55"/>
+<rect x="0" y="0" width="14" height="675" fill="#E0A63E"/>
+<g transform="translate(600 337)"><rect x="-250" y="-120" width="460" height="240" rx="30" stroke="#F1F4F9" stroke-width="16" fill="none"/><rect x="210" y="-50" width="40" height="100" rx="10" fill="#F1F4F9"/>
+<rect x="-226" y="-96" width="80" height="192" rx="12" fill="#E2574C"/>
+<path d="M30 -170 l-60 120 h70 l-50 120" stroke="#E0A63E" stroke-width="18" fill="none" stroke-linejoin="round" stroke-linecap="round" transform="translate(40 40) scale(.7)"/></g>
+<text x="60" y="620" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="5" fill="#9AA9C2">SAÚDE MENTAL · NR-01</text>
+</svg>
