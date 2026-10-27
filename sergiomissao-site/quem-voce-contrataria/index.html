@@ -118,6 +118,13 @@ a{color:inherit}
 .footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted);font-size:var(--s-1)}
 .footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
 .footer a{color:var(--muted)}
+
+/* Arte do post ao lado do cabeçalho da rodada */
+.round-top{display:grid;grid-template-columns:minmax(0,19rem) minmax(0,1fr);gap:clamp(1.25rem,3.5vw,2.5rem);align-items:center}
+.round-art{display:block;border-radius:12px;overflow:hidden;background:#13294B;box-shadow:0 14px 30px -18px rgba(19,33,58,.55);transition:transform .15s ease}
+.round-art:hover{transform:translateY(-2px)}
+.round-art img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+@media (max-width:760px){.round-top{grid-template-columns:1fr}.round-art{max-width:26rem}}
 </style>
 </head>
 <body>
@@ -159,12 +166,15 @@ a{color:inherit}
   <div class="wrap rounds">
 
     <article class="round" id="diretor-comercial" aria-labelledby="r1-t">
-      <header class="round-head">
+      <div class="round-top">
+        <a class="round-art" href="img/diretor-comercial.jpg" target="_blank" rel="noopener" aria-label="Ampliar a arte do post"><img src="img/diretor-comercial.jpg" alt="Arte do post: Harvey Specter, Thomas Shelby e Tyrion Lannister sentados lado a lado, vaga de Diretor Comercial" width="900" height="900" loading="lazy" decoding="async"></a>
+        <header class="round-head">
         <p class="eyebrow">Rodada 01</p>
         <h2 id="r1-t"><span>Vaga:</span> Diretor Comercial</h2>
         <p class="round-hook">Tem negociador que ganha a mesa e perde o cliente.</p>
         <div class="round-ctx"><p>Sua empresa precisa de um novo Diretor Comercial. Você recebeu 3 candidatos para decidir qual deles contratar.</p></div>
       </header>
+      </div>
       <ul class="cands">
         <li class="cand">
           <h3>Harvey Specter</h3><p class="obra">Suits</p>
@@ -188,7 +198,9 @@ a{color:inherit}
     </article>
 
     <article class="round" id="diretor-juridico" aria-labelledby="r2-t">
-      <header class="round-head">
+      <div class="round-top">
+        <a class="round-art" href="img/diretor-juridico.jpg" target="_blank" rel="noopener" aria-label="Ampliar a arte do post"><img src="img/diretor-juridico.jpg" alt="Arte do post: Saul Goodman, Mickey Haller e Kevin Lomax sentados lado a lado, vaga de Diretor Jurídico" width="900" height="900" loading="lazy" decoding="async"></a>
+        <header class="round-head">
         <p class="eyebrow">Rodada 02</p>
         <h2 id="r2-t"><span>Vaga:</span> Diretor Jurídico</h2>
         <p class="round-hook">Promessa é dívida: Saul chegou para a entrevista.</p>
@@ -196,6 +208,7 @@ a{color:inherit}
           <p>Na rodada anterior, um leitor sugeriu um candidato que não estava entre as opções: Saul Goodman. Desta vez, são três advogados disputando uma única vaga. Todos têm talento e todos apresentam riscos.</p>
         </div>
       </header>
+      </div>
       <ul class="cands">
         <li class="cand">
           <p class="cand-label">O negociador sem limites</p>
@@ -223,12 +236,15 @@ a{color:inherit}
     </article>
 
     <article class="round" id="lider-de-equipe" aria-labelledby="r3-t">
-      <header class="round-head">
+      <div class="round-top">
+        <a class="round-art" href="img/lider-de-equipe.jpg" target="_blank" rel="noopener" aria-label="Ampliar a arte do post"><img src="img/lider-de-equipe.jpg" alt="Arte do post: Lion-O, Mestre Splinter e He-Man sentados lado a lado, vaga de Líder de Equipe" width="900" height="900" loading="lazy" decoding="async"></a>
+        <header class="round-head">
         <p class="eyebrow">Rodada 03</p>
         <h2 id="r3-t"><span>Vaga:</span> Líder de Equipe</h2>
         <p class="round-hook">Três candidatos. Uma vaga de liderança.</p>
         <div class="round-ctx"><p>Um aprende liderando. Outro lidera fazendo. O terceiro ensina os outros a liderar. Todos têm qualidades e também limitações.</p></div>
       </header>
+      </div>
       <ul class="cands">
         <li class="cand">
           <h3>Lion-O</h3><p class="obra">ThunderCats</p>
@@ -253,7 +269,9 @@ a{color:inherit}
     </article>
 
     <article class="round" id="diretor-de-estrategia" aria-labelledby="r4-t">
-      <header class="round-head">
+      <div class="round-top">
+        <a class="round-art" href="img/diretor-de-estrategia.jpg" target="_blank" rel="noopener" aria-label="Ampliar a arte do post"><img src="img/diretor-de-estrategia.jpg" alt="Arte do post: O Professor, Michael Scofield e Raymond Reddington sentados lado a lado, vaga de Diretor de Estratégia" width="900" height="900" loading="lazy" decoding="async"></a>
+        <header class="round-head">
         <p class="eyebrow">Rodada 04 · a mais recente</p>
         <h2 id="r4-t"><span>Vaga:</span> Diretor de Estratégia</h2>
         <p class="round-hook">Toda empresa tem um plano... o problema começa quando ele encontra a realidade.</p>
@@ -262,6 +280,7 @@ a{color:inherit}
           <p>Os três são estrategistas brilhantes, mas nenhum está livre de riscos.</p>
         </div>
       </header>
+      </div>
       <ul class="cands">
         <li class="cand">
           <p class="cand-label">O planejador</p>
