@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quem você contrataria? | Sérgio Missão</title>
+<meta name="description" content="Série de Sérgio Missão no LinkedIn: personagens famosos disputam uma vaga. Todos têm talento, todos têm riscos. Quem você contrataria e por quê?">
+<link rel="canonical" href="https://sergiomissao.com.br/quem-voce-contrataria/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sérgio Missão">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Quem você contrataria? | Sérgio Missão">
+<meta property="og:description" content="Personagens famosos disputando uma vaga. Todos têm talento, todos têm riscos. Qual você escolheria?">
+<meta property="og:url" content="https://sergiomissao.com.br/quem-voce-contrataria/">
+<meta property="og:image" content="https://sergiomissao.com.br/foto-palco.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../logo-sm.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Mesmo sistema visual da página principal (tokens copiados de ../index.html) */
+:root{
+  --paper:#F4F6F9; --surface:#FFFFFF; --ink:#13213A; --muted:#55617A; --line:#D9DFE9;
+  --brand:#1B3A6B; --brand-soft:#E6ECF5; --amber:#C98A1B; --amber-ink:#8A5A0B;
+  --panel:#13294B; --panel-fg:#F1F4F9; --panel-muted:#B9C5DA;
+  --btn-bg:#1B3A6B; --btn-fg:#FFFFFF; --focus:#C98A1B; --logo-filter:none;
+  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-1:.875rem; --s0:1rem; --s1:1.125rem; --s2:1.375rem; --s3:1.75rem; --s4:2.25rem;
+  --wrap:72rem; --gutter:clamp(1rem,4vw,2.5rem); --radius:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D1420; --surface:#141E2F; --ink:#E7ECF4; --muted:#A3AEC2; --line:#26334A;
+  --brand:#9DBBEB; --brand-soft:#1B2A42; --amber:#E0A63E; --amber-ink:#E9B65A;
+  --panel:#182A47; --panel-fg:#F1F4F9; --panel-muted:#B4C1D8;
+  --btn-bg:#9DBBEB; --btn-fg:#0D1420; --focus:#E0A63E; --logo-filter:invert(1); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D1420; --surface:#141E2F; --ink:#E7ECF4; --muted:#A3AEC2; --line:#26334A;
+  --brand:#9DBBEB; --brand-soft:#1B2A42; --amber:#E0A63E; --amber-ink:#E9B65A;
+  --panel:#182A47; --panel-fg:#F1F4F9; --panel-muted:#B4C1D8;
+  --btn-bg:#9DBBEB; --btn-fg:#0D1420; --focus:#E0A63E; --logo-filter:invert(1); color-scheme:dark}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--s0)/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.015em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font:500 .78rem/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--amber-ink)}
+.skip{position:absolute;left:-999px;top:0;background:var(--btn-bg);color:var(--btn-fg);padding:.6rem 1rem;z-index:50}
+.skip:focus{left:1rem;top:.5rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.3rem;border-radius:999px;font:600 var(--s0)/1.2 var(--f-body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--btn-bg);color:var(--btn-fg)}
+.btn-ghost{border-color:currentColor;color:var(--brand);background:transparent}
+.btn-light{background:var(--panel-fg);color:#13294B}
+.btn-outline-light{border-color:var(--panel-muted);color:var(--panel-fg)}
+
+/* Cabeçalho */
+.header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.25rem}
+.brand{display:inline-flex;align-items:center;gap:.6rem;font:700 var(--s1)/1 var(--f-display);text-decoration:none;letter-spacing:-.01em}
+.brand .tag{color:var(--amber-ink);font:500 .75rem/1 var(--f-mono);letter-spacing:.08em}
+.logo{height:2rem;width:auto;filter:var(--logo-filter);flex:none}
+.back{font-weight:500;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--ink)}
+@media (max-width:420px){.brand .tag{display:none}}
+
+/* Abertura */
+.intro{padding-block:clamp(2rem,6vw,4rem) clamp(1.5rem,4vw,2.5rem)}
+.intro-box{background:var(--panel);color:var(--panel-fg);border-radius:calc(var(--radius) + 4px);padding:clamp(1.5rem,5vw,3.5rem);position:relative;overflow:hidden}
+.intro-box::before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:var(--amber)}
+.intro .eyebrow{color:var(--amber)}
+.intro h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.02;letter-spacing:-.03em;margin-block:1rem 1.25rem}
+.intro-text{display:grid;gap:.9rem;max-width:44rem;color:var(--panel-muted);font-size:var(--s1)}
+.intro-text b{color:var(--panel-fg);font-weight:600}
+.rounds-nav{list-style:none;margin:2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:.6rem}
+.rounds-nav a{display:grid;gap:.3rem;padding:.85rem 1rem;border-radius:8px;border:1px solid color-mix(in srgb,var(--panel-muted) 35%,transparent);text-decoration:none;background:color-mix(in srgb,var(--panel-fg) 4%,transparent);transition:border-color .15s ease}
+.rounds-nav a:hover{border-color:var(--amber)}
+.rounds-nav small{font:500 .7rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.rounds-nav strong{font:700 var(--s0)/1.25 var(--f-display)}
+.novo{display:inline-block;margin-left:.4rem;padding:.15rem .45rem;border-radius:999px;background:var(--amber);color:#13294B;font:500 .62rem/1.2 var(--f-mono);letter-spacing:.08em;vertical-align:middle}
+
+/* Rodadas */
+.rounds{display:grid;gap:clamp(1.5rem,4vw,2.5rem);padding-block:clamp(1rem,3vw,2rem) clamp(3rem,8vw,5rem)}
+.round{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.25rem,4vw,2.5rem);display:grid;gap:clamp(1.25rem,3vw,1.75rem);scroll-margin-top:6rem}
+.round:target{border-color:var(--amber);box-shadow:0 0 0 3px color-mix(in srgb,var(--amber) 25%,transparent)}
+.round-head{display:grid;gap:.6rem;max-width:46rem}
+.round-head h2{font-size:clamp(1.6rem,3.6vw,2.4rem);letter-spacing:-.02em}
+.round-head h2 span{color:var(--muted);font-weight:500}
+.round-hook{font:500 var(--s1)/1.45 var(--f-display);border-left:3px solid var(--amber);padding-left:1rem}
+.round-ctx{color:var(--muted);display:grid;gap:.6rem}
+.cands{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:1rem}
+.cand{border:1px solid var(--line);border-radius:8px;padding:1.1rem 1.15rem 1.2rem;display:grid;gap:.55rem;align-content:start;background:var(--paper);position:relative}
+.cand::before{content:"";position:absolute;left:1.15rem;top:0;width:2.25rem;height:3px;background:var(--amber)}
+.cand-label{font:500 .7rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink)}
+.cand h3{font-size:var(--s2)}
+.cand .obra{font-size:var(--s-1);color:var(--muted);font-style:italic}
+.cand p{color:var(--ink)}
+.cand .risco{color:var(--muted)}
+.round-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.1rem;border-top:1px dashed var(--line)}
+.round-q{font:700 var(--s1)/1.3 var(--f-display)}
+
+/* Ponte para o serviço */
+.bridge{padding-bottom:clamp(3rem,8vw,5rem)}
+.bridge-box{background:var(--panel);color:var(--panel-fg);border-radius:var(--radius);padding:clamp(1.5rem,5vw,3rem);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.bridge .eyebrow{color:var(--amber)}
+.bridge h2{font-size:clamp(1.8rem,3.8vw,2.6rem);letter-spacing:-.02em;margin-block:.8rem 1rem}
+.bridge p{color:var(--panel-muted);font-size:var(--s1)}
+.bridge .actions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:flex-start}
+@media (max-width:760px){.bridge-box{grid-template-columns:1fr}}
+
+.footer{border-top:1px solid var(--line);padding-block:2rem;color:var(--muted);font-size:var(--s-1)}
+.footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+.footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="../"><img class="logo" src="../logo-sm.png" alt="" width="38" height="32"><span>Sérgio Missão</span><span class="tag">#NaMissão</span></a>
+    <a class="back" href="../#preparacao-entrevistas">← Voltar ao site</a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="intro" aria-labelledby="titulo">
+    <div class="wrap">
+      <div class="intro-box">
+        <p class="eyebrow">Série no LinkedIn</p>
+        <h1 id="titulo">Quem você contrataria?</h1>
+        <div class="intro-text">
+          <p>Personagens famosos de séries, filmes e desenhos chegam à etapa final de um processo seletivo. <b>Todos têm talento. Todos têm riscos.</b> E você precisa escolher um só.</p>
+          <p>Não existe resposta certa. Existe a escolha que faz sentido para a vaga, para a empresa e para o momento, e a capacidade de explicar por quê. Leia os perfis, escolha o seu candidato e defenda a escolha nos comentários do LinkedIn.</p>
+        </div>
+        <ul class="rounds-nav" aria-label="Vagas da série">
+          <li><a href="#diretor-comercial"><small>Rodada 01</small><strong>Diretor Comercial</strong></a></li>
+          <li><a href="#diretor-juridico"><small>Rodada 02</small><strong>Diretor Jurídico</strong></a></li>
+          <li><a href="#lider-de-equipe"><small>Rodada 03</small><strong>Líder de Equipe</strong></a></li>
+          <li><a href="#diretor-de-estrategia"><small>Rodada 04</small><strong>Diretor de Estratégia <span class="novo">NOVA</span></strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    PARA INCLUIR UMA NOVA RODADA:
+    1. Copie um bloco <article class="round" ...> ... </article> e cole no fim da lista.
+    2. Troque o id (só minúsculas e hífen), a vaga, os textos e o link do post.
+    3. Acrescente a vaga no menu "rounds-nav" acima e mova a etiqueta NOVA para ela.
+  -->
+  <div class="wrap rounds">
+
+    <article class="round" id="diretor-comercial" aria-labelledby="r1-t">
+      <header class="round-head">
+        <p class="eyebrow">Rodada 01</p>
+        <h2 id="r1-t"><span>Vaga:</span> Diretor Comercial</h2>
+        <p class="round-hook">Tem negociador que ganha a mesa e perde o cliente.</p>
+        <div class="round-ctx"><p>Sua empresa precisa de um novo Diretor Comercial. Você recebeu 3 candidatos para decidir qual deles contratar.</p></div>
+      </header>
+      <ul class="cands">
+        <li class="cand">
+          <h3>Harvey Specter</h3><p class="obra">Suits</p>
+          <p>Entra na sala como se já tivesse ganhado (e quase sempre ganha).</p>
+          <p class="risco">O problema é quem fica do outro lado... e não quer voltar.</p>
+        </li>
+        <li class="cand">
+          <h3>Thomas Shelby</h3><p class="obra">Peaky Blinders</p>
+          <p>Fala pouco, lê todo mundo e só mostra a carta quando o outro já cedeu. Fecha qualquer acordo.</p>
+          <p class="risco">Ninguém dorme tranquilo.</p>
+        </li>
+        <li class="cand">
+          <h3>Tyrion Lannister</h3><p class="obra">Game of Thrones</p>
+          <p>Quase sempre negocia em desvantagem, sem força e sem exército. Tem argumento e sabe o que o outro precisa ouvir.</p>
+        </li>
+      </ul>
+      <footer class="round-foot">
+        <p class="round-q">Qual candidato você escolheria?</p>
+        <a class="btn btn-primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7514266412815757312/" target="_blank" rel="noopener">Dar minha resposta no LinkedIn</a>
+      </footer>
+    </article>
+
+    <article class="round" id="diretor-juridico" aria-labelledby="r2-t">
+      <header class="round-head">
+        <p class="eyebrow">Rodada 02</p>
+        <h2 id="r2-t"><span>Vaga:</span> Diretor Jurídico</h2>
+        <p class="round-hook">Promessa é dívida: Saul chegou para a entrevista.</p>
+        <div class="round-ctx">
+          <p>Na rodada anterior, um leitor sugeriu um candidato que não estava entre as opções: Saul Goodman. Desta vez, são três advogados disputando uma única vaga. Todos têm talento e todos apresentam riscos.</p>
+        </div>
+      </header>
+      <ul class="cands">
+        <li class="cand">
+          <p class="cand-label">O negociador sem limites</p>
+          <h3>Saul Goodman</h3><p class="obra">Breaking Bad / Better Call Saul</p>
+          <p>Criativo, persuasivo e capaz de encontrar saídas onde ninguém mais vê possibilidades. Negocia como poucos e transforma problemas em oportunidades.</p>
+          <p class="risco">Mas costuma flexibilizar princípios para vencer, mesmo colocando a reputação da empresa em risco.</p>
+        </li>
+        <li class="cand">
+          <p class="cand-label">O estrategista</p>
+          <h3>Mickey Haller</h3><p class="obra">O Poder e a Lei</p>
+          <p>Observador, preparado e habilidoso para antecipar movimentos. Conhece a lei, entende as pessoas e sabe agir sob pressão.</p>
+          <p class="risco">Seu risco está na autoconfiança, que pode levá-lo a apostar alto demais em situações delicadas.</p>
+        </li>
+        <li class="cand">
+          <p class="cand-label">O competidor</p>
+          <h3>Kevin Lomax</h3><p class="obra">O Advogado do Diabo</p>
+          <p>Talentoso, ambicioso e determinado a vencer. Sua persuasão e seu desempenho sob pressão impressionam.</p>
+          <p class="risco">Mas, quando o sucesso vira obsessão, a ambição pode falar mais alto que a ética. E nem toda vitória compensa o preço pago.</p>
+        </li>
+      </ul>
+      <footer class="round-foot">
+        <p class="round-q">Qual você contrataria?</p>
+        <a class="btn btn-primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7516426452226121728/" target="_blank" rel="noopener">Dar minha resposta no LinkedIn</a>
+      </footer>
+    </article>
+
+    <article class="round" id="lider-de-equipe" aria-labelledby="r3-t">
+      <header class="round-head">
+        <p class="eyebrow">Rodada 03</p>
+        <h2 id="r3-t"><span>Vaga:</span> Líder de Equipe</h2>
+        <p class="round-hook">Três candidatos. Uma vaga de liderança.</p>
+        <div class="round-ctx"><p>Um aprende liderando. Outro lidera fazendo. O terceiro ensina os outros a liderar. Todos têm qualidades e também limitações.</p></div>
+      </header>
+      <ul class="cands">
+        <li class="cand">
+          <h3>Lion-O</h3><p class="obra">ThunderCats</p>
+          <p>Herdou o comando de uma equipe mais experiente. As provas de que merecia o cargo vieram depois da posse. Corajoso, sabe ouvir e assume a frente nas crises.</p>
+          <p class="risco">Mas pode agir por impulso e depender demais da Espada Justiceira para resolver problemas.</p>
+        </li>
+        <li class="cand">
+          <h3>Mestre Splinter</h3><p class="obra">Tartarugas Ninja</p>
+          <p>Treinou 4 jovens com personalidades diferentes, respeitou suas individualidades e preparou um deles para liderar. Desenvolve talentos, delega e forma uma equipe capaz de funcionar sem ele.</p>
+          <p class="risco">Mas sua distância da operação pode ser um problema quando decisões imediatas são necessárias.</p>
+        </li>
+        <li class="cand">
+          <h3>He-Man</h3><p class="obra">Mestres do Universo</p>
+          <p>Como Príncipe Adam, passa despercebido. Mas, quando a crise aparece, transforma-se e resolve tudo. Entrega resultados sob pressão e inspira confiança.</p>
+          <p class="risco">O risco é criar dependência: se ele resolve todas as crises, quando a equipe vai aprender?</p>
+        </li>
+      </ul>
+      <footer class="round-foot">
+        <p class="round-q">Quem você contrataria para liderar a sua equipe?</p>
+        <a class="btn btn-primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7518613007556308992/" target="_blank" rel="noopener">Dar minha resposta no LinkedIn</a>
+      </footer>
+    </article>
+
+    <article class="round" id="diretor-de-estrategia" aria-labelledby="r4-t">
+      <header class="round-head">
+        <p class="eyebrow">Rodada 04 · a mais recente</p>
+        <h2 id="r4-t"><span>Vaga:</span> Diretor de Estratégia</h2>
+        <p class="round-hook">Toda empresa tem um plano... o problema começa quando ele encontra a realidade.</p>
+        <div class="round-ctx">
+          <p>Três candidatos chegaram à etapa final. Um planeja cada detalhe. Outro antecipa movimentos que ninguém consegue enxergar. E o terceiro conhece pessoas capazes de abrir portas que pareciam fechadas.</p>
+          <p>Os três são estrategistas brilhantes, mas nenhum está livre de riscos.</p>
+        </div>
+      </header>
+      <ul class="cands">
+        <li class="cand">
+          <p class="cand-label">O planejador</p>
+          <h3>O Professor</h3><p class="obra">La Casa de Papel</p>
+          <p>Meticuloso, analítico e capaz de antecipar diferentes cenários. Constrói planos detalhados e prepara alternativas para quase tudo.</p>
+          <p class="risco">Mas sua estratégia depende de que as pessoas ajam como previsto. E, quando sentimentos entram em jogo, inclusive os dele, o controle começa a escapar.</p>
+        </li>
+        <li class="cand">
+          <p class="cand-label">O estrategista</p>
+          <h3>Michael Scofield</h3><p class="obra">Prison Break</p>
+          <p>Observador, engenhoso e capaz de enxergar soluções onde outros só veem obstáculos. Pensa muitos passos à frente e se adapta rapidamente aos imprevistos.</p>
+          <p class="risco">Mas centraliza informações e assume riscos que nem sempre compartilha com quem depende de suas decisões.</p>
+        </li>
+        <li class="cand">
+          <p class="cand-label">O articulador</p>
+          <h3>Raymond Reddington</h3><p class="obra">The Blacklist</p>
+          <p>Conhece pessoas, interesses e oportunidades. Negocia, constrói alianças e encontra caminhos que não aparecem nos planejamentos tradicionais.</p>
+          <p class="risco">Mas sua estratégia depende de relações pessoais, informações privilegiadas e métodos que podem colocar a governança em risco.</p>
+        </li>
+      </ul>
+      <footer class="round-foot">
+        <p class="round-q">Você prefere quem planeja melhor, quem encontra a saída ou quem sabe abrir as portas certas?</p>
+        <a class="btn btn-primary" href="https://www.linkedin.com/feed/update/urn:li:activity:7520791551971577856/" target="_blank" rel="noopener">Dar minha resposta no LinkedIn</a>
+      </footer>
+    </article>
+
+  </div>
+
+  <section class="bridge" aria-labelledby="ponte-t">
+    <div class="wrap">
+      <div class="bridge-box">
+        <div>
+          <p class="eyebrow">E quando o candidato for você?</p>
+          <h2 id="ponte-t">Do outro lado da mesa, alguém também vai pesar seus talentos e seus riscos.</h2>
+          <p>Na preparação para entrevistas, eu ajudo você a contar sua trajetória com clareza e simulo a entrevista, no papel de entrevistador, até você chegar seguro à conversa de verdade.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-light" id="wa-sim" href="../#contato">Quero simular minha entrevista</a>
+          <a class="btn btn-outline-light" href="../#preparacao-entrevistas">Como funciona</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>© <span id="ano">2026</span> Sérgio Missão · #NaMissão</p>
+    <p><a href="https://www.linkedin.com/in/missao" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/sergio.missao" target="_blank" rel="noopener">Instagram</a> · <a href="../">sergiomissao.com.br</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("ano").textContent = new Date().getFullYear();
+  // Botão de WhatsApp com mensagem pronta (mesmo número da página principal)
+  var msg = "Olá! Vi a série Quem você contrataria? e gostaria de me preparar e simular uma entrevista com você.";
+  document.getElementById("wa-sim").href = "https://wa.me/5511916556521?text=" + encodeURIComponent(msg);
+  document.getElementById("wa-sim").target = "_blank";
+  document.getElementById("wa-sim").rel = "noopener";
+</script>
+</body>
+</html>

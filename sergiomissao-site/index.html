@@ -403,6 +403,29 @@ a{color:inherit}
   @keyframes rise{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:none}}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none !important;animation:none !important}}
+
+/* Preparação para entrevistas (bloco em destaque, painel navy) */
+.sim-box{background:var(--panel);color:var(--panel-fg);border-radius:var(--radius);padding:clamp(1.5rem,4.5vw,3.25rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(1.75rem,4vw,3.5rem);position:relative;overflow:hidden;scroll-margin-top:6rem}
+.sim-box::before{content:"";position:absolute;left:0;top:0;width:100%;height:5px;background:var(--amber)}
+.sim .eyebrow{color:var(--amber)}
+.sim-head{display:grid;gap:1rem;align-content:start}
+.sim-head h2{font-size:clamp(1.9rem,3.8vw,2.8rem);letter-spacing:-.02em}
+.sim-head p{color:var(--panel-muted);font-size:var(--s1)}
+.sim-head .actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.5rem}
+.sim-steps{list-style:none;margin:0;padding:0;display:grid;gap:.75rem;counter-reset:sim}
+.sim-steps li{counter-increment:sim;display:grid;grid-template-columns:2.4rem minmax(0,1fr);gap:.2rem 1rem;padding:1rem 1.1rem;border:1px solid color-mix(in srgb,var(--panel-muted) 30%,transparent);border-radius:8px;background:color-mix(in srgb,var(--panel-fg) 4%,transparent)}
+.sim-steps li::before{content:counter(sim,decimal-leading-zero);grid-row:span 2;font:500 .9rem/1.6 var(--f-mono);color:var(--amber)}
+.sim-steps b{font:700 var(--s1)/1.3 var(--f-display)}
+.sim-steps span{color:var(--panel-muted)}
+.sim-foot{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(1.25rem,4vw,3.5rem);align-items:center;padding-top:1.5rem;border-top:1px dashed color-mix(in srgb,var(--panel-muted) 40%,transparent)}
+.sim-foot p{color:var(--panel-muted)}
+.sim-foot p b{color:var(--panel-fg)}
+.sim-game{display:grid;gap:.35rem;padding:1.1rem 1.25rem;border-radius:8px;background:var(--panel-fg);color:#13294B;text-decoration:none;transition:transform .15s ease}
+.sim-game:hover{transform:translateY(-2px)}
+.sim-game .eyebrow{color:#8A5A0B}
+.sim-game strong{font:700 var(--s2)/1.15 var(--f-display)}
+.sim-game small{color:#3D4A63;font-size:var(--s-1)}
+@media (max-width:860px){.sim-box,.sim-foot{grid-template-columns:1fr}}
 </style>
 
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -420,6 +443,7 @@ a{color:inherit}
     <nav class="nav" id="nav" aria-label="Principal">
       <ul>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#preparacao-entrevistas">Entrevistas</a></li>
         <li><a href="#palestras-detalhe">Palestras</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#artigos">Artigos</a></li>
@@ -564,7 +588,7 @@ a{color:inherit}
         <article class="service" id="entrevistas" aria-labelledby="entrevistas-t">
           <header>
             <h3 id="entrevistas-t">Preparação para entrevistas</h3>
-            <p>Sessões individuais para contar sua trajetória com clareza em uma entrevista de emprego, em um processo seletivo interno ou na disputa por uma posição de liderança. O trabalho parte da sua experiência real e ajuda você a apresentá-la do jeito que ela merece.</p>
+            <p>Sessões individuais para contar sua trajetória com clareza em uma entrevista de emprego, em um processo seletivo interno ou na disputa por uma posição de liderança. O trabalho parte da sua experiência real e ajuda você a apresentá-la do jeito que ela merece, e inclui a simulação da entrevista, comigo no papel de entrevistador.</p>
           </header>
           <div>
             <h4>Faz sentido para quem</h4>
@@ -581,9 +605,35 @@ a{color:inherit}
               <li>Perguntas para fazer ao entrevistador</li>
             </ul>
           </div>
-          <div class="cta"><a class="btn btn-primary" data-wa="entrevistas" href="#contato">Preparar minha entrevista</a></div>
+          <div class="cta"><a class="btn btn-primary" data-wa="entrevistas" href="#contato">Preparar minha entrevista</a><a href="#preparacao-entrevistas" class="cta-link">Como funciona a simulação ↓</a></div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <section class="section sim" id="preparacao-entrevistas" aria-labelledby="sim-titulo">
+    <div class="wrap">
+      <div class="sim-box">
+        <div class="sim-head">
+          <p class="eyebrow">Preparação para entrevistas</p>
+          <h2 id="sim-titulo">Ensaie a entrevista antes de ela acontecer.</h2>
+          <p>Eu ajudo você a se preparar e simulo a entrevista com você. Já estive muitas vezes do outro lado da mesa e sei o que o entrevistador está tentando descobrir com cada pergunta. Na simulação, você responde em voz alta, recebe o retorno na hora e repete até a resposta sair do seu jeito, sem soar decorada.</p>
+          <div class="actions">
+            <a class="btn btn-light" data-wa="simulacao" href="#contato">Quero simular minha entrevista</a>
+            <a class="btn btn-outline-light" href="https://calendar.app.google/P4hFoDGgfbcVtn9u8" target="_blank" rel="noopener">Agendar um horário</a>
+          </div>
+        </div>
+        <ol class="sim-steps">
+          <li><b>A vaga e a sua história</b><span>Entendemos o processo, a empresa e o que a posição exige, e escolhemos as experiências que mais conversam com ela.</span></li>
+          <li><b>Respostas com exemplo</b><span>Organizamos sua narrativa e as respostas às perguntas mais prováveis, com situações reais que você viveu.</span></li>
+          <li><b>Simulação</b><span>Eu faço o papel do entrevistador: RH, futuro gestor ou banca. Perguntas da vaga real, inclusive as difíceis.</span></li>
+          <li><b>Retorno e nova rodada</b><span>O que funcionou, o que confundiu e o que faltou. Ajustamos e simulamos de novo.</span></li>
+        </ol>
+        <div class="sim-foot">
+          <p><b>Serve para</b> entrevista em outra empresa, processo seletivo interno, promoção e disputa por cargo de liderança.</p>
+          <a class="sim-game" href="quem-voce-contrataria/"><span class="eyebrow">Do outro lado da mesa</span><strong>Quem você contrataria?</strong><small>Candidatos famosos, uma vaga só. Teste seu olhar de recrutador →</small></a>
+        </div>
       </div>
     </div>
   </section>
@@ -953,6 +1003,7 @@ a{color:inherit}
     <div>
       <a class="brand" href="#topo"><img class="logo" src="logo-sm.png" alt="" width="38" height="32"><span class="brand-name" data-cfg="marca">Sérgio Missão</span></a>
       <p style="margin-top:.5rem;max-width:30rem">Liderança, comunicação e desenvolvimento de pessoas para profissionais, empresas e cooperativas.</p>
+      <p style="margin-top:.5rem"><a href="quem-voce-contrataria/">Quem você contrataria? A série</a></p>
     </div>
     <div style="display:grid;gap:.6rem">
       <ul id="social"></ul>
@@ -1799,6 +1850,7 @@ Minha filha ficou. E esse é o orgulho que nenhum retrovisor arranhado tira.
   destaquesSegundos: 3.5,
   destaques: [
     { selo: "Preparação individual", titulo: "Quer se preparar para a próxima avaliação de desempenho?", texto: "Organize suas entregas, mostre o que você fez e chegue pronto para a conversa. Também para entrevistas.", botao: "Clique aqui", link: "#avaliacao", botao2: "Preparar entrevista", link2: "#entrevistas", imagem: "ilus/avaliacao.svg" },
+    { selo: "Série no LinkedIn", titulo: "Quem você contrataria?", texto: "Personagens famosos disputando uma vaga. Todos têm talento, todos têm riscos. Qual você escolheria?", botao: "Ver os candidatos", link: "quem-voce-contrataria/", botao2: "Simular minha entrevista", link2: "#preparacao-entrevistas", imagem: "ilus/candidatos.svg" },
     { selo: "Palestra", titulo: "Burnout Sem Lados", texto: "Empresa e empregado na mesma conversa sobre pressão, limites e responsabilidade.", botao: "Conhecer a palestra", link: "#palestra-burnout", imagem: "ilus/burnout.svg" },
     { selo: "Palestra para cooperativas", titulo: "A Experiência do Dono", texto: "Aqui o cliente é dono. Mas ele realmente se sente assim?", botao: "Conhecer a palestra", link: "#palestra-dono", imagem: "ilus/dono.svg" },
     { selo: "Novo no Lado B da Liderança", titulo: "O Chefe Robô!", texto: "A Califórnia proibiu demitir só porque a IA recomendou. Quem continua assinando a decisão?", botao: "Ler agora", link: "#artigo-o-chefe-robo", imagem: "ilus/robo.svg", ladoB: true },
@@ -1813,6 +1865,7 @@ Minha filha ficou. E esse é o orgulho que nenhum retrovisor arranhado tira.
     mentoria: "Olá! Tenho interesse na mentoria individual e gostaria de entender como funciona.",
     avaliacao: "Olá! Gostaria de conhecer as sessões individuais de preparação para avaliação de desempenho.",
     entrevistas: "Olá! Tenho interesse nas sessões individuais de preparação para entrevistas.",
+    simulacao: "Olá! Tenho uma entrevista pela frente e gostaria de me preparar e fazer uma simulação com você.",
     consultoria: "Olá! Gostaria de conversar sobre uma necessidade de consultoria para minha organização.",
     treinamentos: "Olá! Gostaria de conversar sobre um treinamento para nossa equipe.",
     palestras: "Olá! Gostaria de consultar uma proposta de palestra para nosso evento."

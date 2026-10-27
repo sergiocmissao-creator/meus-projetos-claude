@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" fill="none">
+  <rect width="640" height="480" fill="#1B3358"/>
+  <g stroke="#2C4A78" stroke-width="1"><path d="M0 120H640M0 240H640M0 360H640M160 0V480M320 0V480M480 0V480"/></g>
+  <!-- mesa -->
+  <rect x="60" y="356" width="520" height="22" rx="6" fill="#3E5F93"/>
+  <!-- tres candidatos -->
+  <g>
+    <circle cx="170" cy="250" r="36" fill="#9AA9C2"/>
+    <path d="M110 356c0-46 26-66 60-66s60 20 60 66z" fill="#9AA9C2"/>
+    <circle cx="320" cy="238" r="40" fill="#E0A63E"/>
+    <path d="M254 356c0-52 29-74 66-74s66 22 66 74z" fill="#E0A63E"/>
+    <circle cx="470" cy="250" r="36" fill="#9AA9C2"/>
+    <path d="M410 356c0-46 26-66 60-66s60 20 60 66z" fill="#9AA9C2"/>
+  </g>
+  <!-- balao com interrogacao -->
+  <g>
+    <rect x="250" y="62" width="140" height="96" rx="22" fill="#F1F4F9"/>
+    <path d="M300 158l-4 28 30-28z" fill="#F1F4F9"/>
+    <path d="M302 96c2-12 12-18 22-18 13 0 22 8 22 19 0 14-18 15-18 28" stroke="#1B3358" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="328" cy="140" r="5.5" fill="#1B3358"/>
+  </g>
+  <!-- marcas de avaliacao -->
+  <g stroke-linecap="round" stroke-width="6">
+    <path d="M150 186l12 12 22-24" stroke="#C9D2E1"/>
+    <path d="M454 180l26 26M480 180l-26 26" stroke="#C9D2E1"/>
+  </g>
+</svg>
