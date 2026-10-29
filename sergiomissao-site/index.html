@@ -117,6 +117,10 @@ a{color:inherit}
 .dest-visual.is-ilus{background:#1B3358}
 .dest-visual.is-ilus img{object-fit:contain;object-position:center;padding:1rem}
 .dest-visual.is-ilus::after{display:none}
+.dest-visual.is-book{background:#f5f2eb}
+.dest-visual.is-book img{object-fit:contain;object-position:center;padding:.75rem}
+.dest-visual.is-book::after{display:none}
+@media(max-width:680px){.dest-slide:has(.is-book){grid-template-rows:auto 24rem}}
 .dest-badge{position:absolute !important;inset:1rem 1rem auto auto !important;width:64px !important;height:auto !important;padding:0 !important;border-radius:8px;z-index:1}
 .dest-visual.is-ladob{display:grid;place-items:center;background:#0d0d0d}
 .dest-visual.is-ladob img{position:static;width:auto;height:min(80%,14rem)}
@@ -1851,7 +1855,7 @@ Minha filha ficou. E esse é o orgulho que nenhum retrovisor arranhado tira.
   destaques: [
     { selo: "Preparação individual", titulo: "Quer se preparar para a próxima avaliação de desempenho?", texto: "Organize suas entregas, mostre o que você fez e chegue pronto para a conversa. Também para entrevistas.", botao: "Clique aqui", link: "#avaliacao", botao2: "Preparar entrevista", link2: "#entrevistas", imagem: "ilus/avaliacao.svg" },
     { selo: "Série no LinkedIn", titulo: "Quem você contrataria?", texto: "Personagens famosos disputando uma vaga. Todos têm talento, todos têm riscos. Qual você escolheria?", botao: "Ver os candidatos", link: "quem-voce-contrataria/", botao2: "Simular minha entrevista", link2: "#preparacao-entrevistas", imagem: "ilus/candidatos.svg" },
-    { selo: "Palestra", titulo: "Burnout Sem Lados", texto: "Empresa e empregado na mesma conversa sobre pressão, limites e responsabilidade.", botao: "Conhecer a palestra", link: "#palestra-burnout", imagem: "ilus/burnout.svg" },
+    { selo: "Palestra", titulo: "Burnout Sem Lados", texto: "Empresa e empregado na mesma conversa sobre pressão, limites e responsabilidade.", botao: "Conhecer a palestra", link: "#palestra-burnout", imagem: "ilus/burnei-capa.jpg", imagemAlt: "BURNEI! E AGORA? O burnout na visão de um executivo que viveu os dois lados", capaLivro: true },
     { selo: "Palestra para cooperativas", titulo: "A Experiência do Dono", texto: "Aqui o cliente é dono. Mas ele realmente se sente assim?", botao: "Conhecer a palestra", link: "#palestra-dono", imagem: "ilus/dono.svg" },
     { selo: "Novo no Lado B da Liderança", titulo: "O Chefe Robô!", texto: "A Califórnia proibiu demitir só porque a IA recomendou. Quem continua assinando a decisão?", botao: "Ler agora", link: "#artigo-o-chefe-robo", imagem: "ilus/robo.svg", ladoB: true },
     { selo: "Palestra", titulo: "Desaprenda a Liderar", texto: "O cargo dá autoridade; só a liderança conquista seguidores.", botao: "Conhecer a palestra", link: "#palestra-desaprenda", imagem: "ilus/desaprenda.svg" }
@@ -2072,6 +2076,7 @@ Minha filha ficou. E esse é o orgulho que nenhum retrovisor arranhado tira.
       if (d.imagem) {
         const im = document.createElement("img"); im.src = d.imagem; im.alt = d.imagemAlt || ""; im.loading = i ? "lazy" : "eager"; vis.appendChild(im);
         if (/\.svg$/.test(d.imagem)) vis.classList.add("is-ilus");
+        if (d.capaLivro) vis.classList.add("is-book");
         if (d.ladoB) { const bd = document.createElement("img"); bd.className = "dest-badge"; bd.src = "logo-ladob-lockup.png"; bd.alt = "O Lado B da Liderança"; vis.appendChild(bd); }
       } else if (d.ladoB) { vis.classList.add("is-ladob"); vis.innerHTML = '<img src="logo-ladob-lockup.png" alt="Logo O Lado B da Liderança">'; }
       else vis.remove();
