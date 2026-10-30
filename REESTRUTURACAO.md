@@ -16,7 +16,7 @@ As URLs antigas com fragmentos são encaminhadas por `assets/site.js`. As rotas 
 
 - Portfólio, conteúdos, fotos, marca e identidade: versão atual do site e repositório.
 - Contatos comerciais, MBA Executivo pela FGV e livro em produção: PDF comercial `Palestra_BURNEI_Sergio_Missao.pdf`, versão atual conferida em 29/10/2026. PDF disponibilizado sem alterações. Esse material usa o título BURNEI! E agora?, identificado dessa forma na página de organizadores; a página da palestra preserva Burnout Sem Lados.
-- Telefones: +55 54 99653-6157 primeiro e +55 35 99137-0128 como adicional. E-mail e redes sociais preservados do site.
+- Telefone no site: somente o WhatsApp +55 11 91655-6521 (decisão de 30/10/2026). Os números +55 54 99653-6157 e +55 35 99137-0128 ficam apenas em flyers e outros documentos, como o PDF comercial. E-mail e redes sociais preservados do site.
 - Durações dos treinamentos: formatos informados na versão anterior. Duração de palestras e valores individuais continuam sob consulta.
 - Cargos no cooperativismo descritos sem instituição ou período não confirmado. Não foram inventados clientes, depoimentos ou certificações.
 - A agenda Google existente foi preservada. Não foi localizado endereço operacional Cal.com.
