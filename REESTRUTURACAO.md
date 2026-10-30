@@ -15,7 +15,7 @@ As URLs antigas com fragmentos são encaminhadas por `assets/site.js`. As rotas 
 ## Fontes e decisões
 
 - Portfólio, conteúdos, fotos, marca e identidade: versão atual do site e repositório.
-- Contatos comerciais e livro em produção: PDF comercial `Palestra_BURNEI_Sergio_Missao.pdf`, versão atual conferida em 29/10/2026. PDF disponibilizado sem alterações. Esse material usa o título BURNEI! E agora?, identificado dessa forma na página de organizadores; a página da palestra preserva Burnout Sem Lados.
+- Contatos comerciais e livro em produção: PDF comercial `Palestra_BURNEI_Sergio_Missao.pdf`, versão atual conferida em 29/10/2026. O PDF não fica mais disponível para download no site (contém o MBA); a página de organizadores oferece pedir a apresentação pelo WhatsApp, por decisão de 30/10/2026. Esse material usa o título BURNEI! E agora?, identificado dessa forma na página de organizadores; a página da palestra preserva Burnout Sem Lados.
 - Formação acadêmica (MBA Executivo pela FGV) não aparece no site, por decisão de 30/10/2026; fica apenas no LinkedIn.
 - Telefone no site: somente o WhatsApp +55 11 91655-6521 (decisão de 30/10/2026). Os números +55 54 99653-6157 e +55 35 99137-0128 ficam apenas em flyers e outros documentos, como o PDF comercial. E-mail e redes sociais preservados do site.
 - Durações dos treinamentos: formatos informados na versão anterior. Duração de palestras e valores individuais continuam sob consulta.
