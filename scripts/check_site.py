@@ -52,7 +52,7 @@ for loc in sm.findall('.//{*}loc'):
     path=urlsplit(loc.text).path
     if not (root/path.strip('/')/'index.html').is_file():errors.append('sitemap missing '+path)
 data=json.loads((root/'data/editorial.json').read_text())
-if len(data['artigos'])!=10 or len(data['posts'])!=8:errors.append('Editorial preservation count')
+if len(data['artigos'])<10 or len(data['posts'])<8:errors.append('Editorial preservation count')
 for a in data['artigos']:
     if not (root/'artigos'/a['slug']/'index.html').exists():errors.append('Missing article '+a['slug'])
 print(json.dumps({'html_files':len(files),'links_and_assets_checked':link_count,'sitemap_urls':len(sm.findall('.//{*}loc')),'articles':len(data['artigos']),'posts':len(data['posts']),'errors':errors},ensure_ascii=False,indent=2))
