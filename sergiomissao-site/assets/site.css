@@ -9,3 +9,4 @@
 @media(max-width:600px){.cover-image{width:calc(100% + 48px);margin:-24px -24px 16px}}
 .serie{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}.serie-art{width:100%;max-width:440px;justify-self:end;border-radius:14px}.serie-card{flex-direction:row;align-items:center;gap:24px;margin-top:32px;text-decoration:none;max-width:760px}.serie-card h3{margin:.2rem 0 .4rem}.serie-thumb{width:150px;flex:none;border-radius:10px}
 @media(max-width:600px){.serie{grid-template-columns:minmax(0,1fr)}.serie-art{justify-self:start}.serie-card{flex-direction:column;align-items:flex-start}.serie-thumb{width:100%;max-width:280px}}
+.card-light{--surface:#fff;--ink:#13213A;--muted:#55617A;--line:#D9DFE9;--brand:#1B3A6B;--amber:#8A5A0B;background:#fff;color:#13213A;border-color:#D9DFE9}.card-light h3 a{color:#13213A}
