@@ -104,6 +104,7 @@ def crumbs(items):
 def faq(items):
     return '<div class="faq">'+''.join('<details><summary>'+E(q)+'</summary><p>'+E(a)+'</p></details>' for q,a in items)+'</div>'
 
+CTA_LABEL = 'Fale conosco'
 NAV = [('palestras','Palestras'),('mentoria','Mentoria'),('consultoria','Consultoria'),('cooperativismo','Cooperativismo'),('conteudos','Conteúdos'),('sobre','Sobre')]
 CONTEUDO_PATHS = ('artigos','posts','quem-voce-contrataria','decisor-por-um-dia','como-funciona-simulacao-entrevista','conteudos')
 
@@ -118,7 +119,7 @@ def header_html(path=''):
     return (f'<a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="site-header"><div class="wrap topbar">'
             f'<a class="brand" href="/" aria-label="Sérgio Missão, página inicial"><img class="logo" src="/logo-sm.png" alt="" width="40" height="40"><span>Sérgio Missão<small>Palestrante, mentor e consultor</small></span></a>'
             f'<nav id="nav" aria-label="Principal">{menu}</nav>'
-            f'<a class="button header-cta" href="/contato/">Conversar<span class="long">&nbsp;com Sérgio</span></a>'
+            f'<a class="button header-cta" href="/contato/">{CTA_LABEL}</a>'
             f'<button id="menu-button" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span class="mtxt">Menu </span><span aria-hidden="true">☰</span></button></div></header>')
 
 def footer_html():
@@ -261,7 +262,7 @@ for t in talks:
     page('palestras/'+t['slug'],t['title'],t['intro']+' Palestra de Sérgio Missão: público, duração, formatos e contato.',body,og=t['img'] if t['img'].endswith('.jpg') else 'foto-palco.jpg')
 
 cmp_rows = ''.join('<tr><th scope="row">'+link('/palestras/'+t['slug']+'/',t['title'])+'</th><td>'+E(t['intro'])+'</td><td>'+E(t['short'])+'</td><td>'+E(t['discuss'])+'</td><td>'+E(t['duration'])+'</td></tr>' for t in talks)
-body = hero('Palestras','Conversas que continuam depois do evento.','Liderança, relações de trabalho e cooperativismo, conectados às situações que o seu público vive. Compare os temas e abra a ficha para encaminhar ao comitê.',talk_pair('palestras para nosso evento'),image('foto-palco.jpg','Sérgio Missão falando ao microfone para uma plateia','hero-art photo',True))
+body = hero('Palestras','Conversas que continuam depois do evento.','Liderança, relações de trabalho e cooperativismo, conectados às situações que o seu público vive. Compare os temas e abra a ficha para encaminhar ao comitê.',talk_pair('palestras para nosso evento'),image('foto-palco.jpg','Sérgio Missão falando ao microfone para uma plateia','hero-art photo face',True))
 body += section('Escolha a conversa para o seu público',talkcards(),'escolher')
 body += section('Compare lado a lado','<div class="table-wrap"><table class="compare"><caption class="sr-only">Comparação entre as palestras</caption><thead><tr><th scope="col">Palestra</th><th scope="col">Tema</th><th scope="col">Para quem</th><th scope="col">O que a plateia vai discutir</th><th scope="col">Duração</th></tr></thead><tbody>'+cmp_rows+'</tbody></table></div>')
 body += section('Fichas para encaminhar','<p class="reading">Cada palestra tem uma ficha com tema, público, duração, formatos, requisitos técnicos e contato, pronta para imprimir ou salvar em PDF.</p><div class="actions">'+''.join(link('/palestras/'+t['slug']+'/#ficha','Ficha: '+t['title'],'button secondary') for t in talks)+'</div><p>Biografia e fotos para divulgação estão na '+link('/organizadores/','página para organizadores')+'.</p>','fichas')
@@ -344,7 +345,7 @@ body += section('Quem costuma procurar','<div class="grid two"><div><p class="re
 body+=section('Mentoria executiva','<div class="grid two"><div><h3>Para quem faz sentido</h3><p>Profissionais que assumiram uma equipe, ganharam novas responsabilidades, estão diante de uma decisão de carreira ou precisam organizar os próximos passos.</p><p>O acompanhamento trabalha desafios ao longo do tempo. Frequência, formato e valores são alinhados no contato inicial.</p></div><div><h3>O que podemos trabalhar</h3>'+ul(['Liderança e gestão de pessoas','Comunicação e relacionamento profissional','Decisões e desafios da carreira','Preparação para novas responsabilidades','Prioridades e próximos passos'])+'</div></div><div class="actions">'+pair('disponibilidade e valores da mentoria executiva')+'</div>','mentoria')
 body+=section('Mentoria de dirigentes','<div class="grid two"><div><p class="reading">'+E(dirigentes_txt)+'</p><p>Para quem chega ao cargo vindo do quadro social ou do núcleo, o trabalho ajuda a separar representação, decisão e gestão.</p></div><div><h3>O que costuma entrar</h3>'+ul(['Papel do conselho e da diretoria','Relação com associados, núcleos e colaboradores','Decisões difíceis e como comunicá-las','Preparação para assembleias e reuniões de conselho','Sucessão e preparação de quem vem depois'])+'</div></div><div class="actions">'+cta('a mentoria de dirigentes para cooperativas','Consultar disponibilidade e valores')+link('/cooperativismo/programas/#mentoria-de-dirigentes','Ver no núcleo de Cooperativismo →')+'</div>','dirigentes')
 body+=section('Preparação para entrevistas','<p class="reading">Organização da trajetória para entrevistas de emprego, processos internos e posições de liderança. Inclui simulação de entrevista, com Sérgio no papel de entrevistador, feedback e nova rodada de prática.</p><div class="grid two"><div><h3>Antes da conversa</h3>'+ul(['Compreender a vaga e suas exigências','Escolher experiências relevantes','Estruturar respostas com exemplos reais'])+'</div><div><h3>Durante a preparação</h3>'+ul(['Responder em voz alta e receber feedback','Trabalhar clareza, objetividade e postura','Preparar perguntas para o entrevistador'])+'</div></div><div class="actions">'+cta('disponibilidade e valores da preparação para entrevistas','Consultar disponibilidade e valores')+link('/como-funciona-simulacao-entrevista/','Como funciona a simulação de entrevista →')+'</div><a class="card serie-card" href="/quem-voce-contrataria/">'+image('img/series/quem-voce-contrataria-mesa.jpg','Mesa de reunião vazia com o título Quem você contrataria?','serie-thumb')+'<div><p class="eyebrow">Do outro lado da mesa</p><h3>Quem você contrataria?</h3><p>Candidatos famosos, uma vaga só. Teste seu olhar de recrutador →</p></div></a>','entrevistas')
-body+=section('Preparação para avaliação de desempenho','<p class="reading">Sessões para chegar à avaliação com as ideias organizadas, sabendo apresentar entregas e discutir pontos de desenvolvimento. A avaliação continua sendo conduzida pela empresa e pelo gestor.</p>'+ul(['Organização das entregas e resultados do período','Evidências e exemplos concretos','Preparação da autoavaliação','Como receber e discutir feedbacks','Perguntas sobre expectativas e próximos passos'])+cta('disponibilidade e valores da preparação para avaliação de desempenho','Consultar disponibilidade e valores'),'avaliacao')
+body+=section('Vá preparado para a sua avaliação de desempenho','<div class="grid two"><div><p class="reading">A avaliação de desempenho é o momento de mostrar o que você entregou e de combinar os próximos passos. Quem chega com as ideias organizadas apresenta resultados com segurança, recebe feedback sem se defender e sai com expectativas claras. A avaliação continua sendo conduzida pela empresa e pelo gestor.</p></div><div><h3>Como funciona</h3>'+ol([('Pontos importantes','Identificar o que a empresa e o gestor vão observar e o que mais pesa no seu caso.'),('Entregas e evidências','Organizar resultados, projetos e exemplos concretos do período.'),('Autoavaliação','Preparar o que dizer sobre pontos fortes e pontos de desenvolvimento.'),('Simulação','Ensaiar a conversa, incluindo como receber feedback e fazer perguntas sobre os próximos passos.')])+'</div></div><div class="actions"><a class="button" href="'+AGENDA+'" target="_blank" rel="noopener">Agende um horário</a>'+link(wa('disponibilidade e valores da preparação para avaliação de desempenho'),'Enviar mensagem','button secondary')+link('/decisor-por-um-dia/#avaliacao','Ver o método aplicado à avaliação →')+'</div>','avaliacao')
 body+=section('Preparação para negociação','<p class="reading">Sessões para preparar negociações de salário, promoção, escopo e condições de trabalho, além de acordos com clientes e áreas parceiras. O trabalho organiza objetivos, argumentos, limites e alternativas, e inclui simulação da conversa com feedback.</p>'+ul(['Objetivos, limites e alternativas de cada lado','Interesses da outra parte e valor da proposta','Argumentos apoiados em evidências','Respostas às objeções mais prováveis','Próximos passos após a conversa'])+'<div class="actions">'+cta('disponibilidade e valores da preparação para negociação','Consultar disponibilidade e valores')+link('/decisor-por-um-dia/#negociacao','Ver o método aplicado à negociação →')+'</div>','negociacao')
 body+=section('Como começa e como se define o trabalho',ol([('Primeiro contato','Mensagem pelo WhatsApp ou horário na agenda. Basta contar o objetivo em poucas linhas.'),('Conversa inicial','Entendimento da situação, do prazo e do que precisa estar diferente ao final.'),('Definição','Formato, número de sessões, frequência e valores são combinados antes de começar.'),('Sessões','Encontros com preparação, prática e feedback. Na preparação pontual, o trabalho termina com a conversa real.')]))
 body+=section('Mentoria ou consultoria?','<div class="grid two"><div class="card"><h3>Mentoria</h3><p>O foco é uma pessoa: suas decisões, conversas e próximos passos.</p></div><div class="card"><h3>Consultoria</h3><p>O foco é a organização ou a equipe: um problema que se repete entre pessoas e áreas.</p>'+link('/consultoria/','Conhecer a consultoria →')+'</div></div>')
@@ -366,9 +367,9 @@ body += section('Conte o desafio da sua organização','<p class="reading">Descr
 page('consultoria','Consultoria para empresas e cooperativas','Diagnóstico, acompanhamento e treinamento para desafios de liderança, comunicação e cultura em empresas e cooperativas.',body)
 
 # ---------------------------------------------------------------- sobre
-bio='Sérgio Missão é executivo, conselheiro, consultor e palestrante, com mais de duas décadas de atuação executiva. Tem trajetória em multinacionais da indústria e atuação em logística, compras, suporte e serviços, programas, treinamento e relacionamento com clientes. No cooperativismo de crédito, foi associado, coordenador de núcleo, conselheiro e presidente de cooperativa. Trabalha com liderança, comunicação, governança e cultura para profissionais, empresas e cooperativas.'
-body = hero('Sobre','Experiência para conversar sobre o trabalho real.',bio,link('/contato/','Conversar com Sérgio','button'),image('foto-retrato.jpg','Sérgio Missão, de blazer bege e camisa branca','portrait',True))
-body += section('Trajetória','<div class="grid two"><div><h3>Na gestão</h3><p>Carreira construída em multinacionais da indústria, como diretor e líder de equipes e projetos em logística, compras, suporte e serviços, programas, treinamento e relacionamento com clientes.</p></div><div><h3>No cooperativismo de crédito</h3><p>Percurso de associado a presidente: coordenador de núcleo, conselheiro e presidente de cooperativa. Essa vivência conecta as perspectivas de quem é dono, de quem representa e de quem decide.</p>'+link('/cooperativismo/','Conhecer o núcleo de Cooperativismo →')+'</div></div>')
+bio='Sérgio Missão é executivo, conselheiro, consultor e palestrante, com mais de duas décadas de atuação executiva. Tem trajetória em multinacionais e no cooperativismo de crédito, onde atuou, além de associado, como coordenador de núcleo, conselheiro e presidente de cooperativa. Trabalha com liderança, comunicação, governança e cultura para profissionais, empresas e cooperativas.'
+body = hero('Sobre','Experiência para conversar sobre o trabalho real.',bio,link('/contato/',CTA_LABEL,'button'),image('foto-retrato.jpg','Sérgio Missão, de blazer bege e camisa branca','portrait',True))
+body += section('Trajetória','<div class="grid two"><div><h3>Na gestão</h3><p>Carreira construída em multinacionais da indústria, como diretor e líder de equipes e projetos em logística, compras, suporte e serviços, programas, treinamento e relacionamento com clientes.</p></div><div><h3>No cooperativismo de crédito</h3><p>Percurso completo no cooperativismo de crédito: associado, coordenador e delegado de núcleo, presidente e conselheiro de cooperativa. Essa vivência conecta as perspectivas de quem é dono, de quem representa e de quem decide.</p>'+link('/cooperativismo/','Conhecer o núcleo de Cooperativismo →')+'</div></div>')
 body += section('Onde essa experiência faz diferença','<div class="grid three"><article class="card"><h3>Em eventos</h3><p>Palestras construídas a partir de situações vividas na gestão e no cooperativismo.</p>'+link('/palestras/','Palestras →')+'</article><article class="card"><h3>Na carreira de quem lidera</h3><p>A experiência de direção ajuda a preparar decisões, entrevistas e negociações.</p>'+link('/mentoria/','Mentoria →')+'</article><article class="card"><h3>Nas organizações</h3><p>Gestão em multinacional e governança em cooperativa como referência para diagnóstico e acompanhamento.</p>'+link('/consultoria/','Consultoria →')+'</article></div>')
 body += section('O Lado B da Liderança','<p class="reading">Na newsletter, Sérgio escreve sobre decisões, relações de trabalho e situações de liderança que nem sempre aparecem nas apresentações. Também é autor do livro '+livro_link()+'.</p>'+link('/artigos/','Ler artigos e edições da newsletter →'))
 body += preview_only(section('Casos (modelo — só na prévia)','<aside class="todo"><strong>A preencher</strong><p>Cada caso precisa de autorização de uso, contexto, participação de Sérgio e resultado documentado. Modelo: <em>Organização (ou setor, se anônimo) · Situação · O que foi feito · O que mudou · Autorização em [data]</em>.</p></aside>','casos'))
@@ -449,7 +450,7 @@ def coop_sub(slug, name, title, intro, img, alt, problem, who, steps, fmt, deliv
     page('cooperativismo/'+slug, name+' | Cooperativismo', intro, body, og=og or img, theme='coop', og_alt=alt)
 
 # ---- página principal
-chairs = [('Associado','Entendi o que é ser dono sem saber que era.'),('Coordenador de núcleo','Aprendi que representar não é mandar.'),('Conselheiro','Descobri o peso da decisão que ninguém aplaude.'),('Presidente','Vi que liderar é preparar quem vem depois.'),('Executivo de multinacional','Trouxe a régua de resultado sem perder a de propósito.')]
+chairs = [('Associado','Entendi o que é ser dono sem saber que era.'),('Coordenador e delegado de núcleo','Aprendi que representar não é mandar.'),('Conselheiro','Descobri o peso da decisão que ninguém aplaude.'),('Presidente','Vi que liderar é preparar quem vem depois.'),('Executivo de multinacional','Trouxe a régua de resultado sem perder a de propósito.')]
 chairs_html = '<ol class="chairs">'+''.join(f'<li class="reveal"><span class="chair-n" aria-hidden="true">{i}</span><h3>{E(c)}</h3><p>“{E(q)}”</p></li>' for i,(c,q) in enumerate(chairs,1))+'</ol>'
 timeline = [('1885','O padre jesuíta suíço Theodor Amstad chega ao Brasil.'),('28/12/1902','Em Linha Imperial, Nova Petrópolis/RS, 20 pessoas assinam a ata de fundação da primeira cooperativa de crédito da América Latina, inspirada no modelo de Friedrich Wilhelm Raiffeisen. Hoje ela é a Sicredi Pioneira RS.'),('2010','Nova Petrópolis recebe, pela Lei Federal 12.205/2010, o título de Capital Nacional do Cooperativismo.'),('2019','Padre Amstad é declarado Patrono do Cooperativismo Brasileiro pela Lei 13.926/2019.'),('Hoje','E a sua cooperativa, qual capítulo está escrevendo?')]
 timeline_html = '<ol class="timeline">'+''.join(f'<li class="reveal"><time>{E(y)}</time><p>{E(t)}</p></li>' for y,t in timeline)+'</ol>'
@@ -467,8 +468,8 @@ solutions = [('Associados',[('A Experiência do Dono','/cooperativismo/palestras
              ('Conselho',[('Conselho em Ação','/cooperativismo/programas/#conselho-em-acao'),('Assembleia Viva','/cooperativismo/assembleia-viva/')]),
              ('Diretoria',[('Mentoria de Dirigentes','/cooperativismo/programas/#mentoria-de-dirigentes'),('Assembleia Viva','/cooperativismo/assembleia-viva/')]),
              ('Equipes',[('CoopExperience','/cooperativismo/programas/#coopexperience'),('Cooperativa que Cuida','/cooperativismo/cooperativa-que-cuida/'),('A Experiência do Dono','/cooperativismo/palestras/#a-experiencia-do-dono')])]
-body = ('<section class="page-hero coop-hero main"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Cooperativismo de crédito, visto de todas as cadeiras</p><h1>“Do associado ao conselho, eu já sentei em cada cadeira.”</h1>'
-        '<p class="lead">Palestras, programas e experiências para cooperativas que querem crescer sem perder o que as torna diferentes.</p><div class="actions">'
+body = ('<section class="page-hero coop-hero main"><div class="wrap"><div class="hero-grid"><div><p class="eyebrow">Cooperativismo de crédito, visto de todas as cadeiras</p><h1>Experiência e vivência, do associado ao conselho.</h1>'
+        '<p class="lead">Sérgio Missão traz a experiência de quem exerceu diferentes funções no cooperativismo de crédito: associado, coordenador e delegado de núcleo, presidente e conselheiro. Por ter ocupado cada uma dessas cadeiras, conhece por dentro o que o associado espera, o que o núcleo representa, o compromisso de quem preside e o peso das decisões do conselho.</p><p class="reading">Palestras, programas e experiências para cooperativas que querem crescer sem perder o que as torna diferentes.</p><div class="actions">'
         '<a class="button" href="'+E(wa_coop('palestras e programas'))+'">Vamos conversar</a>'+link('#palestras','Ver palestras','button secondary')+'</div></div>'
         +image('foto-palco.jpg','Sérgio Missão falando ao microfone para uma plateia','portrait photo',True)+'</div></div></section>')
 body += section('As cadeiras que ocupei','<div class="split">'+ilus(CI+'coop-cadeiras.jpg','Ilustração de cinco cadeiras diferentes lado a lado: de plástico, de madeira simples, estofada, de madeira entalhada e de escritório','side-photo')+'<p class="reading">Cada cadeira mostra a cooperativa de um ângulo diferente.</p></div>'+chairs_html,'cadeiras')
@@ -483,7 +484,7 @@ body += section('Cooperativa que Cuida','<div class="split">'+ilus(CI+'coop-cuid
 sol_rows = ''.join('<tr><th scope="row">'+E(p)+'</th><td><ul class="chips">'+''.join('<li>'+link(u,n)+'</li>' for n,u in s)+'</ul></td></tr>' for p,s in solutions)
 body += section('Qual solução para qual momento','<div class="table-wrap"><table class="solutions"><caption class="sr-only">Soluções indicadas para cada público da cooperativa</caption><thead><tr><th scope="col">Público</th><th scope="col">Soluções</th></tr></thead><tbody>'+sol_rows+'</tbody></table></div>','solucoes')
 body += section('Qual conversa a sua cooperativa precisa ter?','<div class="form-grid"><div><p class="reading">Conte quem é o público, o objetivo e o período. A resposta vem com uma sugestão de formato.</p><a class="button" href="'+E(wa_coop('palestras e programas'))+'">Prefiro conversar pelo WhatsApp</a><p class="small">Ou escreva para '+link('mailto:contato@sergiomissao.com.br','contato@sergiomissao.com.br')+'.</p></div>'+coop_form()+'</div>','conversa')
-page('cooperativismo','Cooperativismo: palestras, programas e experiências','Do associado ao conselho: palestras, programas e experiências para cooperativas de crédito que querem crescer sem perder o que as torna diferentes.',body,theme='coop',og=CI+'coop-cadeiras.jpg',og_alt='Cinco cadeiras diferentes lado a lado')
+page('cooperativismo','Cooperativismo: palestras, programas e experiências','Experiência e vivência do associado ao conselho: palestras, programas e experiências para cooperativas de crédito que querem crescer sem perder o que as torna diferentes.',body,theme='coop',og=CI+'coop-cadeiras.jpg',og_alt='Cinco cadeiras diferentes lado a lado')
 
 # ---- /cooperativismo/palestras/
 def coop_talk_detail(t):
@@ -608,18 +609,128 @@ def articlecards(items):
 page('artigos','Artigos e O Lado B da Liderança','Artigos e edições da newsletter de Sérgio Missão, preservados na íntegra.',hero('Artigos e newsletter','O Lado B da Liderança','Decisões, relações e aprendizados sobre o trabalho e a liderança.',link('https://www.linkedin.com/newsletters/o-lado-b-da-lideran%C3%A7a-7498454209936203776/','Assinar no LinkedIn','button',True),image('img/series/o-lado-b-da-lideranca.jpg','O Lado B da Liderança: autoridade se recebe no primeiro dia, legitimidade se renova todo dia','hero-art',True),crumbs([('/conteudos/','Conteúdos'),(None,'Artigos')]))+section('Todos os artigos',articlecards(articles))+section('Mais reflexões',link('/posts/','Ler os posts →')+' · '+link('/conteudos/','Buscar por tema →')),og='img/series/o-lado-b-da-lideranca.jpg')
 page('posts','Posts de Sérgio Missão','Textos publicados por Sérgio Missão sobre liderança, cultura, relacionamento e cooperativismo.',hero('Redes sociais','Reflexões do dia a dia.','Posts de Sérgio Missão, com acesso à publicação original.','','',crumbs([('/conteudos/','Conteúdos'),(None,'Posts')]))+'<div class="wrap reading prose">'+''.join('<article id="'+p['_id']+'"><h2>'+E(p['titulo'])+'</h2><p class="meta">'+datebr(p['data'])+' · '+E(tema(p))+'</p>'+(image(p['imagem'],p.get('imagemAlt',''),'post-image') if p.get('imagem','').startswith('img/linkedin/') else '')+'<details><summary>Ler o texto completo</summary>'+rich(p['texto'])+'</details>'+link(p['link'],'Ver no LinkedIn →',ext=True)+'</article>' for p in posts)+'</div>')
 
-# rodadas da série, lidas da própria página (o Site Upd acrescenta rodadas lá)
-qvc_path = OUT/'quem-voce-contrataria/index.html'
-qvc_html = qvc_path.read_text(encoding='utf-8')
-rounds = re.findall(r'<li><a href="#([a-z0-9-]+)"><small>(Rodada \d+)</small><strong>([^<]+)', qvc_html)
+# ---------------------------------------------------------------- série Quem você contrataria?
+# Fonte: data/quem-voce-contrataria.html (o Site Upd acrescenta um <article class="round"> por rodada).
+# O gerador monta a galeria /quem-voce-contrataria/ e uma página por rodada.
+QVC_SRC = (OUT/'data/quem-voce-contrataria.html').read_text(encoding='utf-8')
+QVC_HEAD = QVC_SRC.split('</head>')[0]
+QVC_CSS_EXTRA = '''
+.qvc-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}.qvc-nav{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}.qvc-nav a{text-decoration:none;font-size:.92rem;color:inherit;padding:6px 0}.qvc-nav a[aria-current]{text-decoration:underline;text-decoration-thickness:2px}.qvc-nav .qvc-cta{background:#A9512A;color:#fff;border-radius:32px;padding:8px 16px;font-weight:600}.qvc-crumb{display:block!important;font-size:.85rem;margin-top:8px}.qvc-crumb>*{display:inline}.qvc-crumb a{color:inherit}.qvc-foot{display:flex;flex-wrap:wrap;gap:8px 20px}
+.qvc-section{padding:40px 0 8px}
+.qvc-feature{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:center;text-decoration:none;color:inherit;border-radius:18px;padding:18px;border:2px solid transparent}
+.qvc-feature:hover,.qvc-feature:focus-visible{border-color:currentColor}
+.qvc-feature img{width:100%;max-width:460px;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:14px}
+.qvc-feature h2{margin:.3rem 0 .6rem}
+.qvc-novo{display:inline-block;background:#A9512A;color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border-radius:20px;padding:4px 12px;margin-right:8px}
+.qvc-more{font-weight:700;text-decoration:underline}
+.qvc-grid{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.qvc-grid li{margin:0}.qvc-grid a{display:block;border-radius:12px;overflow:hidden;border:2px solid transparent}
+.qvc-grid a:hover,.qvc-grid a:focus-visible{border-color:currentColor}
+.qvc-grid img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform .25s}
+.qvc-grid a:hover img{transform:scale(1.03)}
+.qvc-steps{margin:18px 0 0;padding-left:1.3rem}.qvc-steps li{margin-bottom:.5rem}
+.qvc-pager{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:8px 0 32px}
+.qvc-pager a{font-weight:600}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:700px){.qvc-feature{grid-template-columns:1fr;gap:16px;padding:8px}.qvc-grid{gap:10px}}
+@media(prefers-reduced-motion:reduce){.qvc-grid img{transition:none}}
+'''
+qvc_intro_text = re.search(r'<div class="intro-text">(.*?)</div>', QVC_SRC, re.S).group(1).strip()
+qvc_rounds = []
+for art, slug in re.findall(r'(<article class="round" id="([a-z0-9-]+)".*?</article>)', QVC_SRC, re.S):
+    num = int(re.search(r'Rodada (\d+)', art).group(1))
+    cargo = re.sub(r'<[^>]+>', '', re.sub(r'<span>Vaga:</span>', '', re.search(r'<h2[^>]*>(.*?)</h2>', art, re.S).group(1))).strip()
+    im = re.search(r'<img src="(img/[^"]+)" alt="([^"]*)"', art)
+    hook = re.search(r'<p class="round-hook">(.*?)</p>', art, re.S)
+    art_abs = art.replace('src="img/', 'src="/quem-voce-contrataria/img/').replace('href="img/', 'href="/quem-voce-contrataria/img/').replace(' · a mais recente', '')
+    qvc_rounds.append({'slug': slug, 'num': num, 'cargo': cargo, 'img': '/quem-voce-contrataria/' + im.group(1), 'alt': html.unescape(im.group(2)),
+                       'hook': html.unescape(re.sub(r'<[^>]+>', '', hook.group(1))) if hook else '', 'html': art_abs})
+qvc_rounds.sort(key=lambda r: r['num'])
+assert qvc_rounds, 'Nenhuma rodada encontrada'
+QVC_WA = wa_text('Olá! Vi a série Quem você contrataria? e gostaria de me preparar e simular uma entrevista com você.')
+
+def qvc_header(crumbs_html):
+    return ('<header class="header"><div class="wrap qvc-top"><a class="brand" href="/"><img class="logo" src="/logo-sm.png" alt="" width="38" height="32"><span>Sérgio Missão</span><span class="tag">#NaMissão</span></a>'
+            '<nav class="qvc-nav" aria-label="Principal">' + ''.join(f'<a href="/{s}/"' + (' aria-current="page"' if s == 'conteudos' else '') + f'>{n}</a>' for s, n in NAV)
+            + '<a class="qvc-cta" href="/contato/">' + E(CTA_LABEL) + '</a></nav></div><nav class="wrap qvc-crumb" aria-label="Você está em">' + crumbs_html + '</nav></header>')
+
+QVC_FOOTER = ('<footer class="footer"><div class="wrap"><p class="qvc-foot"><a href="/palestras/">Palestras</a><a href="/mentoria/">Mentoria</a><a href="/consultoria/">Consultoria</a><a href="/treinamentos/">Treinamentos</a><a href="/cooperativismo/">Cooperativismo</a><a href="/organizadores/">Para organizadores</a><a href="/contato/">Contato</a></p>'
+              '<p><a href="' + E(wa('uma proposta')) + '">WhatsApp: +55 11 91655-6521</a> · <a href="mailto:contato@sergiomissao.com.br">contato@sergiomissao.com.br</a> · <a href="https://www.linkedin.com/in/missao" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/sergio.missao" target="_blank" rel="noopener">Instagram</a></p>'
+              '<p>© <span id="ano">2026</span> Sérgio Missão · #NaMissão</p></div></footer>')
+
+def qvc_prepare(heading_tag='h2'):
+    return ('<section class="bridge" aria-labelledby="ponte-t"><div class="wrap"><div class="bridge-box"><div>'
+            '<p class="eyebrow">E quando o candidato for você?</p>'
+            f'<{heading_tag} id="ponte-t">Prepare-se para a sua entrevista.</{heading_tag}>'
+            '<p>Do outro lado da mesa, alguém também vai pesar seus talentos e seus riscos. A preparação ajuda você a apresentar suas melhores características, os projetos que conduziu e os resultados que entregou, com exemplos claros e no tempo certo.</p>'
+            '<p><b>Como funciona</b></p><ol class="qvc-steps">'
+            '<li><b>Análise da vaga:</b> identificar o que a empresa procura e os pontos que mais pesam na decisão.</li>'
+            '<li><b>Sua trajetória:</b> escolher as experiências, os projetos e os resultados que respondem a esses pontos.</li>'
+            '<li><b>Simulação:</b> entrevista com Sérgio no papel de entrevistador.</li>'
+            '<li><b>Feedback e nova rodada:</b> ajustar respostas, postura e perguntas, e praticar de novo.</li></ol></div>'
+            '<div class="actions"><a class="btn btn-light" href="' + AGENDA + '" target="_blank" rel="noopener">Agende um horário</a>'
+            '<a class="btn btn-outline-light" href="/como-funciona-simulacao-entrevista/">Como funciona a simulação</a>'
+            '<a class="btn btn-outline-light" id="wa-sim" href="' + E(QVC_WA) + '" target="_blank" rel="noopener">Enviar mensagem</a></div>'
+            '</div></div></section>')
+
+def qvc_doc(path, title, desc, og, main_html, crumbs_html, script=''):
+    url = BASE + '/' + path + '/'
+    head = QVC_HEAD
+    head = re.sub(r'<title>.*?</title>', '<title>' + E(title) + ' | Sérgio Missão</title>', head)
+    head = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + E(desc), head)
+    head = re.sub(r'(<link rel="canonical" href=")[^"]*', lambda m: m.group(1) + url, head)
+    head = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + E(title), head)
+    head = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + E(desc), head)
+    head = re.sub(r'(<meta property="og:url" content=")[^"]*', lambda m: m.group(1) + url, head)
+    head = re.sub(r'(<meta property="og:image" content=")[^"]*', lambda m: m.group(1) + BASE + og, head)
+    head = head.replace('href="../logo-sm.png"', 'href="/logo-sm.png"')
+    doc = (head + '<style>' + QVC_CSS_EXTRA + '</style></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a>\n'
+           + qvc_header(crumbs_html) + '\n<main id="conteudo">' + main_html + '</main>\n' + QVC_FOOTER
+           + '<script>document.getElementById("ano").textContent=new Date().getFullYear();' + script + '</script></body></html>')
+    write(path + '/index.html', doc)
+    pages[path] = title
+
+newest = qvc_rounds[-1]
+others = list(reversed(qvc_rounds[:-1]))
+gallery = ('<section class="intro" aria-labelledby="titulo"><div class="wrap"><div class="intro-box"><p class="eyebrow">Série no LinkedIn</p><h1 id="titulo">Quem você contrataria?</h1>'
+           '<div class="intro-text">' + qvc_intro_text + '</div></div></div></section>'
+           '<section class="wrap qvc-section" aria-labelledby="novo-t"><a class="qvc-feature" href="/quem-voce-contrataria/' + newest['slug'] + '/">'
+           '<img src="' + newest['img'] + '" alt="' + E(newest['alt']) + '" width="900" height="900">'
+           '<div><p><span class="qvc-novo">Novo</span><span class="eyebrow">Rodada ' + f"{newest['num']:02d}" + '</span></p><h2 id="novo-t">Vaga: ' + E(newest['cargo']) + '</h2>'
+           + ('<p>' + E(newest['hook']) + '</p>' if newest['hook'] else '')
+           + '<p>Analise os candidatos e decida qual é o melhor perfil para a vaga. Todos têm talento, todos têm riscos: o que pesa mais para esta posição?</p><p class="qvc-more">Ver a rodada e escolher o candidato →</p></div></a></section>'
+           '<section class="wrap qvc-section" aria-labelledby="todas-t"><h2 id="todas-t">Rodadas anteriores</h2><ul class="qvc-grid">'
+           + ''.join('<li><a href="/quem-voce-contrataria/' + r['slug'] + '/" aria-label="Rodada ' + f"{r['num']:02d}" + ': ' + E(r['cargo']) + '"><img src="' + r['img'] + '" alt="" width="300" height="300" loading="lazy"></a></li>' for r in others)
+           + '</ul></section>' + qvc_prepare())
+slugs_js = json.dumps([r['slug'] for r in qvc_rounds])
+qvc_doc('quem-voce-contrataria', 'Quem você contrataria?', 'Série de Sérgio Missão no LinkedIn: personagens famosos disputam uma vaga. Analise os perfis, escolha o candidato e prepare-se para a sua própria entrevista.',
+        newest['img'], gallery, '<a href="/conteudos/">Conteúdos</a> › <span aria-current="page">Quem você contrataria?</span>',
+        # links antigos com âncora (/quem-voce-contrataria/#cargo) abrem a página da rodada
+        'var s=' + slugs_js + ',h=location.hash.slice(1);if(s.indexOf(h)>-1)location.replace("/quem-voce-contrataria/"+h+"/");')
+for i, r in enumerate(qvc_rounds):
+    prev_r = qvc_rounds[i - 1] if i > 0 else None
+    next_r = qvc_rounds[i + 1] if i + 1 < len(qvc_rounds) else None
+    pager = ('<nav class="wrap qvc-pager" aria-label="Outras rodadas">'
+             + ('<a href="/quem-voce-contrataria/' + prev_r['slug'] + '/">← Rodada ' + f"{prev_r['num']:02d}" + ': ' + E(prev_r['cargo']) + '</a>' if prev_r else '<span></span>')
+             + '<a href="/quem-voce-contrataria/">Ver todas as rodadas</a>'
+             + ('<a href="/quem-voce-contrataria/' + next_r['slug'] + '/">Rodada ' + f"{next_r['num']:02d}" + ': ' + E(next_r['cargo']) + ' →</a>' if next_r else '<span></span>')
+             + '</nav>')
+    art = r['html'].replace('<h2 ', '<h1 ', 1).replace('</h2>', '</h1>', 1)
+    if r is newest:
+        art = art.replace('<p class="eyebrow">', '<p class="eyebrow"><span class="qvc-novo">Novo</span>', 1)
+    main_html = '<div class="wrap rounds qvc-section">' + art + '</div>' + pager + qvc_prepare()
+    qvc_doc('quem-voce-contrataria/' + r['slug'], 'Quem você contrataria? Rodada ' + f"{r['num']:02d}" + ': ' + r['cargo'],
+            (r['hook'] + ' ' if r['hook'] else '') + 'Personagens famosos disputam a vaga de ' + r['cargo'] + '. Quem você contrataria e por quê?',
+            r['img'], main_html,
+            '<a href="/conteudos/">Conteúdos</a> › <a href="/quem-voce-contrataria/">Quem você contrataria?</a> › <span aria-current="page">Rodada ' + f"{r['num']:02d}" + '</span>')
 
 items = []
 for a in articles: items.append((a['data'],'Artigo',tema(a),a['titulo'],a['resumo'],'/artigos/'+a['slug']+'/'))
 for p in posts:
     resumo = re.sub(r'\s+',' ',p['texto']).strip()[:150].rsplit(' ',1)[0]+'…'
     items.append((p['data'],'Post',tema(p),p['titulo'],resumo,'/posts/#'+p['_id']))
-for anchor,rn,cargo in rounds:
-    items.append(('','Série',CD_ := 'Carreira e decisões','Quem você contrataria? — '+rn+': '+cargo.strip(),'Personagens famosos disputam a vaga. Quem você contrataria e por quê?','/quem-voce-contrataria/#'+anchor))
+for r in reversed(qvc_rounds):
+    items.append(('','Série','Carreira e decisões','Quem você contrataria? — Rodada '+f"{r['num']:02d}"+': '+r['cargo'],r['hook'] or 'Personagens famosos disputam a vaga. Quem você contrataria e por quê?','/quem-voce-contrataria/'+r['slug']+'/'))
 items.append(('','Série','Liderança e gestão','O Lado B da Liderança (newsletter)','Todas as edições da newsletter, preservadas na íntegra.','/artigos/'))
 items.append(('','Experiência','Carreira e decisões','Decisor por um Dia','Método para preparar entrevistas, avaliações e negociações pensando como quem decide.','/decisor-por-um-dia/'))
 items.append(('','Experiência','Carreira e decisões','Como funciona a simulação de entrevista','Passo a passo e agenda da simulação, com Sérgio no papel de entrevistador.','/como-funciona-simulacao-entrevista/'))
@@ -637,7 +748,7 @@ filters = ('<form class="filters" role="search" aria-label="Filtrar conteúdos" 
            '<p class="c-empty" hidden>Nenhum conteúdo encontrado. Tente outra palavra ou '+link('/conteudos/','veja todos os conteúdos')+'.</p>')
 quick = ('<div class="grid four">'+''.join('<a class="card program" href="'+u+'"><h3>'+E(n)+'</h3><p>'+E(d)+'</p></a>' for n,u,d in [
     ('O Lado B da Liderança','/artigos/',str(len(articles))+' artigos e edições da newsletter'),('Posts','/posts/',str(len(posts))+' reflexões do dia a dia'),
-    ('Quem você contrataria?','/quem-voce-contrataria/',str(len(rounds))+' rodadas da série'),('Decisor por um Dia','/decisor-por-um-dia/','Método e simulação de entrevista')])+'</div>')
+    ('Quem você contrataria?','/quem-voce-contrataria/',str(len(qvc_rounds))+' rodadas da série'),('Decisor por um Dia','/decisor-por-um-dia/','Método e simulação de entrevista')])+'</div>')
 body = hero('Conteúdos','Textos, séries e experiências.','Artigos da newsletter O Lado B da Liderança, posts, a série Quem você contrataria? e o método Decisor por um Dia. Filtre por tema e formato.','')
 body += section('Por onde começar',quick,'formatos')
 body += section('Todos os conteúdos',filters+'<ul class="c-list" id="lista">'+''.join(item_html(i) for i in dated+undated)+'</ul>','todos')
@@ -658,8 +769,8 @@ body += section('Palestras para o seu próximo encontro',talkcards()+'<p>'+link(
 body += section('Mentoria e consultoria','<div class="grid two"><article class="card"><p class="eyebrow">Para uma pessoa</p><h3>Mentoria</h3><p>Mentoria executiva, mentoria de dirigentes e preparação para entrevistas, avaliação de desempenho e negociação. Parte da experiência como diretor em multinacional.</p>'+link('/mentoria/','Conhecer a mentoria →')+'</article>'
         '<article class="card"><p class="eyebrow">Para a organização</p><h3>Consultoria</h3><p>Diagnóstico, acompanhamento e treinamento para desafios de liderança, comunicação e cultura em empresas e cooperativas.</p>'+link('/consultoria/','Conhecer a consultoria →')+'</article></div>','mentoria-consultoria')
 body += ('<section class="section coop-band" id="cooperativismo"><div class="wrap"><p class="eyebrow">Cooperativismo de crédito</p><h2>Cooperativas: propósito vivido no dia a dia</h2>'
-         '<p class="reading">De associado a presidente de cooperativa: a experiência de todas as cadeiras aplicada a palestras, programas, assembleias e ao Cooptour.</p>'
-         '<ol class="path">'+''.join('<li>'+E(c)+'</li>' for c in ['Associado','Coordenador de núcleo','Conselheiro','Presidente'])+'</ol>'
+         '<p class="reading">Experiência e vivência do associado ao conselho, aplicadas a palestras, programas, assembleias e ao Cooptour.</p>'
+         '<ol class="path">'+''.join('<li>'+E(c)+'</li>' for c in ['Associado','Coordenador e delegado de núcleo','Presidente','Conselheiro'])+'</ol>'
          +link('/cooperativismo/','Conhecer o núcleo de Cooperativismo','button')+'</div></section>')
 body += section('Organizando um evento?','<p class="reading">Biografias, fotos, fichas das palestras e contato comercial reunidos para encaminhar ao comitê.</p>'+link('/organizadores/','Acessar materiais para organizadores →'),'organizadores')
 body += section('O Lado B da Liderança',articlecards(articles[:3])+'<p>'+link('/artigos/','Todos os artigos →')+' · '+link('/conteudos/','Todos os conteúdos →')+'</p>','lado-b')
@@ -668,32 +779,13 @@ body += '<section class="section" id="quem-voce-contrataria"><div class="wrap">'
 body += section('Qual conversa sua organização precisa ter?','<p class="reading">Conte o objetivo, o público e o momento da equipe. A partir disso, o trabalho é alinhado.</p><div class="actions">'+cta('uma proposta para nossa organização','Conversar pelo WhatsApp')+link('/contato/#formulario','Escrever pelo formulário','button secondary')+'</div>','fale')
 page('','Palestrante, mentor e consultor','Sérgio Missão: palestras, mentoria executiva e consultoria em liderança, comunicação, governança e cultura, para empresas e cooperativas.',body)
 
-# ---------------------------------------------------------------- série: cabeçalho e rodapé comuns
-qvc_head = ('<!-- cabecalho-comum:inicio (gerado por scripts/build_site.py) -->'
-            '<header class="header"><div class="wrap qvc-top"><a class="brand" href="/"><img class="logo" src="../logo-sm.png" alt="" width="38" height="32"><span>Sérgio Missão</span><span class="tag">#NaMissão</span></a>'
-            '<nav class="qvc-nav" aria-label="Principal">'+''.join(f'<a href="/{s}/"'+(' aria-current="page"' if s=='conteudos' else '')+f'>{n}</a>' for s,n in NAV)+'<a class="qvc-cta" href="/contato/">Conversar com Sérgio</a></nav></div>'
-            '<p class="wrap qvc-crumb"><a href="/conteudos/">Conteúdos</a> › Quem você contrataria?</p></header>'
-            '<style>.qvc-top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}.qvc-nav{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}.qvc-nav a{text-decoration:none;font-size:.92rem;color:inherit;padding:6px 0}.qvc-nav a[aria-current]{text-decoration:underline;text-decoration-thickness:2px}.qvc-nav .qvc-cta{background:#A9512A;color:#fff;border-radius:32px;padding:8px 16px;font-weight:600}.qvc-crumb{font-size:.85rem;margin-top:8px}.qvc-foot{display:flex;flex-wrap:wrap;gap:8px 20px}</style>'
-            '<!-- cabecalho-comum:fim -->')
-qvc_foot = ('<!-- rodape-comum:inicio (gerado por scripts/build_site.py) -->'
-            '<footer class="footer"><div class="wrap"><p class="qvc-foot"><a href="/palestras/">Palestras</a><a href="/mentoria/">Mentoria</a><a href="/consultoria/">Consultoria</a><a href="/treinamentos/">Treinamentos</a><a href="/cooperativismo/">Cooperativismo</a><a href="/organizadores/">Para organizadores</a><a href="/contato/">Contato</a></p>'
-            '<p><a href="'+E(wa('uma proposta'))+'">WhatsApp: +55 11 91655-6521</a> · <a href="mailto:contato@sergiomissao.com.br">contato@sergiomissao.com.br</a> · <a href="https://www.linkedin.com/in/missao" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.instagram.com/sergio.missao" target="_blank" rel="noopener">Instagram</a></p>'
-            '<p>© <span id="ano">2026</span> Sérgio Missão · #NaMissão</p></div></footer><!-- rodape-comum:fim -->')
-if '<!-- cabecalho-comum:inicio' in qvc_html:
-    qvc_html = re.sub(r'<!-- cabecalho-comum:inicio.*?<!-- cabecalho-comum:fim -->', lambda m: qvc_head, qvc_html, flags=re.S)
-    qvc_html = re.sub(r'<!-- rodape-comum:inicio.*?<!-- rodape-comum:fim -->', lambda m: qvc_foot, qvc_html, flags=re.S)
-else:
-    qvc_html = re.sub(r'<header class="header">.*?</header>', lambda m: qvc_head, qvc_html, count=1, flags=re.S)
-    qvc_html = re.sub(r'<footer class="footer">.*?</footer>', lambda m: qvc_foot, qvc_html, count=1, flags=re.S)
-qvc_path.write_text(qvc_html, encoding='utf-8')
-
 # ---------------------------------------------------------------- arquivos de apoio
 old = OUT/'cooperativas/index.html'
 if old.exists(): old.unlink()
-write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+('/'+p+'/' if p else '/')+'</loc></url>' for p in [*pages,'quem-voce-contrataria'])+'</urlset>\n')
-write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
+write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+('/'+p+'/' if p else '/')+'</loc></url>' for p in pages)+'</urlset>\n')
+write('robots.txt','User-agent: *\nAllow: /\nDisallow: /data/\nSitemap: '+BASE+'/sitemap.xml\n')
 write('404.html','<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Página não encontrada | Sérgio Missão</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/assets/site.css"></head><body><main class="wrap prose"><h1>Página não encontrada</h1><p>O endereço pode ter mudado. Continue pelos caminhos abaixo ou entre em contato.</p><p><a class="button" href="/">Página inicial</a> <a class="button secondary" href="/palestras/">Palestras</a> <a class="button secondary" href="/conteudos/">Conteúdos</a> <a class="text-link" href="/contato/">Contato</a></p></main></body></html>')
 write('_redirects','/index.html / 301\n/cooperativas /cooperativismo/ 301\n/cooperativas/ /cooperativismo/ 301\n/cooperativas/index.html /cooperativismo/ 301\n/entrevistas /mentoria/#entrevistas 301\n/avaliacao /mentoria/#avaliacao 301\n/negociacao /mentoria/#negociacao 301\n/apresentacoes / 301\n/preparacao-entrevistas /mentoria/#entrevistas 301\n/palestra-burnout /palestras/burnout-sem-lados/ 301\n/palestra-desaprenda /palestras/desaprenda-a-liderar/ 301\n/palestra-dono /palestras/a-experiencia-do-dono/ 301\n')
 for p in posts: p.pop('_id', None)
 write('data/editorial.json',json.dumps({'artigos':articles,'posts':posts},ensure_ascii=False,indent=2))
-print(json.dumps({'preview':PREVIEW,'pages':len(pages),'noindex':sorted(noindex_pages),'articles':len(articles),'posts':len(posts),'rounds':len(rounds)},ensure_ascii=False))
+print(json.dumps({'preview':PREVIEW,'pages':len(pages),'noindex':sorted(noindex_pages),'articles':len(articles),'posts':len(posts),'rounds':len(qvc_rounds)},ensure_ascii=False))

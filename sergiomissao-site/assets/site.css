@@ -59,7 +59,7 @@ p{margin:0 0 1rem}ul{padding-left:1.25rem}li{margin-bottom:.5rem}
 .quick a{color:var(--brand);font-weight:600}
 .portrait{width:100%;max-height:520px;object-fit:cover;border-radius:var(--radius);aspect-ratio:4/5}
 .hero-art{width:100%;max-height:440px;object-fit:contain;border-radius:var(--radius)}
-.hero-art.photo{object-fit:cover;aspect-ratio:4/3}
+.hero-art.photo{object-fit:cover;aspect-ratio:4/3}.hero-art.photo.face{object-position:50% 22%}
 
 /* seções e cartões */
 .section{padding:56px 0;border-top:1px solid var(--line)}
@@ -236,7 +236,7 @@ figure.ilus figcaption{position:absolute;right:10px;bottom:10px;padding:3px 10px
   .wrap{width:calc(100% - 36px)}
   .brand small{display:none}.logo{width:32px;height:32px}.brand{font-size:1.02rem;gap:8px;min-width:0}
   .topbar{gap:8px;min-height:64px}
-  .header-cta{font-size:.85rem;padding:.45rem .8rem;min-height:44px}.header-cta .long{display:none}
+  .header-cta{font-size:.85rem;padding:.45rem .8rem;min-height:44px;white-space:nowrap}
   #menu-button{padding:8px 12px;font-size:1.2rem;line-height:1}.mtxt{display:none}
   #nav.open{grid-template-columns:1fr;padding:6px 18px 16px}
   .hero-grid:has(>img),.hero-grid:has(>figure),.feature-grid,.two,.three,.four,.footer-grid,.serie{grid-template-columns:minmax(0,1fr)}

@@ -1,3 +1,4 @@
+import re
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
@@ -28,7 +29,7 @@ class Page(HTMLParser):
         if tag=='label' and a.get('for'):self.labels.append(a['for'])
         if tag in ('h1','h2','h3','h4'):self.headings.append(int(tag[1]))
 
-files=list(root.rglob('*.html'));parsed={p:Page(p.read_text()) for p in files};errors=[];link_count=0
+files=[f for f in root.rglob('*.html') if 'data' not in f.relative_to(root).parts];parsed={p:Page(p.read_text()) for p in files};errors=[];link_count=0
 for p,doc in parsed.items():
     new=p.name!='404.html' and 'quem-voce-contrataria' not in p.parts
     if new:
@@ -90,6 +91,10 @@ for path,info in inv.items():
         now=parsed.get(f.resolve()) or Page(f.read_text())
         for i in info['ids']:
             if i in ('menu-button','nav','conteudo','ano','titulo'):continue
+            # rodadas da série viraram páginas próprias; a âncora antiga redireciona por script
+            if path=='/quem-voce-contrataria/':
+                if re.fullmatch(r'r\d+-t',i):continue
+                if (root/'quem-voce-contrataria'/i/'index.html').is_file():continue
             if i not in now.ids and not (path=='/' and f"{i}:" in legacy_js.replace("'","")):errors.append(f'âncora perdida {path}#{i}')
     elif path.rstrip('/') not in redirects:errors.append(f'URL perdida sem redirecionamento {path}')
     else:
