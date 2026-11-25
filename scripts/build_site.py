@@ -328,7 +328,8 @@ def rich(text):
         elif paragraph.startswith('> '): out.append('<blockquote>'+E(paragraph[2:])+'</blockquote>')
         elif paragraph.startswith('- '): out.append(ul([x[2:] for x in paragraph.splitlines() if x.startswith('- ')]))
         else: out.append('<p>'+E(paragraph).replace('\n','<br>')+'</p>')
-    return ''.join(out)
+    # **texto** vira negrito (marcação herdada do LinkedIn; as palavras não mudam)
+    return re.sub(r'\*\*(\S(?:.*?\S)?)\*\*', r'<strong>\1</strong>', ''.join(out))
 
 # ---------------------------------------------------------------- mentoria
 dirigentes_txt = 'Acompanhamento individual de presidentes, diretores e conselheiros recém-eleitos de cooperativas, para organizar o papel, as relações com conselho e diretoria e as primeiras decisões no cargo.'
