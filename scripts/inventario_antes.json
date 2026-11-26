@@ -1,0 +1,611 @@
+{
+ "/404.html": {
+  "title": "Página não encontrada | Sérgio Missão",
+  "ids": [],
+  "ext": [],
+  "imgs": []
+ },
+ "/artigos/a-empresa-bateu-todas-as-metas/": {
+  "title": "A empresa bateu todas as metas. E as pessoas bateram na empresa. E agora? | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/empresa-bateu-todas-metas-e-pessoas-bateram-na-agora-sergio-miss%C3%A3o-fsx2f"
+  ],
+  "imgs": [
+   "/img/linkedin/a-empresa-bateu-todas-as-metas.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/as-vezes-preservar-a-cooperativa-exige-abrir-mao-dela/": {
+  "title": "Às vezes, preservar a cooperativa exige abrir mão dela | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/%C3%A0s-vezes-preservar-cooperativa-exige-abrir-m%C3%A3o-dela-sergio-miss%C3%A3o-ynz1f"
+  ],
+  "imgs": [
+   "/img/linkedin/as-vezes-preservar-a-cooperativa-exige-abrir-mao-dela.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/do-mundo-nao-se-leva-nada/": {
+  "title": "Do mundo não se leva nada! | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/do-mundo-n%C3%A3o-se-leva-nada-sergio-miss%C3%A3o-14tlf"
+  ],
+  "imgs": [
+   "/img/linkedin/do-mundo-nao-se-leva-nada.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/estrela-do-mar/": {
+  "title": "Estrela-do-Mar | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/estrela-do-mar-sergio-miss%C3%A3o-aemzf"
+  ],
+  "imgs": [
+   "/img/linkedin/estrela-do-mar.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/": {
+  "title": "Artigos e O Lado B da Liderança | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/newsletters/o-lado-b-da-lideran%C3%A7a-7498454209936203776/"
+  ],
+  "imgs": [
+   "/img/linkedin/a-empresa-bateu-todas-as-metas.jpg",
+   "/img/linkedin/as-vezes-preservar-a-cooperativa-exige-abrir-mao-dela.jpg",
+   "/img/linkedin/do-mundo-nao-se-leva-nada.jpg",
+   "/img/linkedin/estrela-do-mar.jpg",
+   "/img/linkedin/lideranca-e-satisfacao-do-cliente.jpg",
+   "/img/linkedin/nenhum-lider-afunda-por-causa-do-mar.jpg",
+   "/img/linkedin/o-chefe-robo.jpg",
+   "/img/linkedin/o-presidente-respondeu-em-minutos.jpg",
+   "/img/linkedin/o-relogio-que-a-lei-tirou-de-quem-lidera.jpg",
+   "/img/linkedin/pequenos-desafios-grandes-aprendizados.jpg",
+   "/img/linkedin/quem-a-ia-esta-expondo.jpg",
+   "/img/linkedin/quem-pediu-demissao-e-ficou.jpg",
+   "/img/series/o-lado-b-da-lideranca.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/lideranca-e-satisfacao-do-cliente/": {
+  "title": "Liderança e Satisfação do Cliente | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/lideran%C3%A7a-e-satisfa%C3%A7%C3%A3o-do-cliente-sergio-miss%C3%A3o-fwwyf"
+  ],
+  "imgs": [
+   "/img/linkedin/lideranca-e-satisfacao-do-cliente.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/nenhum-lider-afunda-por-causa-do-mar/": {
+  "title": "Nenhum líder afunda por causa do mar. | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/nenhum-l%C3%ADder-afunda-por-causa-do-mar-sergio-miss%C3%A3o-upolf"
+  ],
+  "imgs": [
+   "/img/linkedin/nenhum-lider-afunda-por-causa-do-mar.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/o-chefe-robo/": {
+  "title": "O Chefe Robô! | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/o-chefe-rob%C3%B4-sergio-miss%C3%A3o-1tpjf"
+  ],
+  "imgs": [
+   "/img/linkedin/o-chefe-robo.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/o-presidente-respondeu-em-minutos/": {
+  "title": "O presidente respondeu em minutos. Isso é um problema? | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/o-presidente-respondeu-em-minutos-isso-%C3%A9-um-problema-sergio-miss%C3%A3o-iw8uc"
+  ],
+  "imgs": [
+   "/img/linkedin/o-presidente-respondeu-em-minutos.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/o-relogio-que-a-lei-tirou-de-quem-lidera/": {
+  "title": "O relógio que a lei tirou de quem lidera | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/o-rel%C3%B3gio-que-lei-tirou-de-quem-lidera-sergio-miss%C3%A3o-yzixf"
+  ],
+  "imgs": [
+   "/img/linkedin/o-relogio-que-a-lei-tirou-de-quem-lidera.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/pequenos-desafios-grandes-aprendizados/": {
+  "title": "Pequenos Desafios &amp; Grandes Aprendizados | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/pequenos-desafios-grandes-aprendizados-sergio-miss%C3%A3o-q43rf"
+  ],
+  "imgs": [
+   "/img/linkedin/pequenos-desafios-grandes-aprendizados.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/quem-a-ia-esta-expondo/": {
+  "title": "Quem a IA está expondo? | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/quem-ia-est%C3%A1-expondo-sergio-miss%C3%A3o-i98jf"
+  ],
+  "imgs": [
+   "/img/linkedin/quem-a-ia-esta-expondo.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/artigos/quem-pediu-demissao-e-ficou/": {
+  "title": "Quem pediu demissão e ficou | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/pulse/quem-pediu-demiss%C3%A3o-e-ficou-sergio-miss%C3%A3o-5kfqf"
+  ],
+  "imgs": [
+   "/img/linkedin/quem-pediu-demissao-e-ficou.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/como-funciona-simulacao-entrevista/": {
+  "title": "Como funciona a simulação de entrevista | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav",
+   "passos"
+  ],
+  "ext": [
+   "https://calendar.app.google/P4hFoDGgfbcVtn9u8",
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/logo-sm.png"
+  ]
+ },
+ "/consultoria/": {
+  "title": "Consultoria para empresas e cooperativas | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/logo-sm.png"
+  ]
+ },
+ "/contato/": {
+  "title": "Contato e propostas | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "duvidas",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://calendar.app.google/P4hFoDGgfbcVtn9u8",
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/logo-sm.png"
+  ]
+ },
+ "/cooperativas/": {
+  "title": "Palestras e desenvolvimento para cooperativas | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/logo-sm.png"
+  ]
+ },
+ "/decisor-por-um-dia/": {
+  "title": "Decisor por um Dia: prepare entrevistas, avaliações e negociações | Sérgio Missão",
+  "ids": [
+   "ano",
+   "avaliacao",
+   "conteudo",
+   "entrevistas",
+   "menu-button",
+   "metodo",
+   "nav",
+   "negociacao"
+  ],
+  "ext": [
+   "https://calendar.app.google/P4hFoDGgfbcVtn9u8",
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/img/series/quem-voce-contrataria-mesa.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/": {
+  "title": "Palestras, treinamentos e desenvolvimento corporativo | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav",
+   "palestras",
+   "preparacao",
+   "quem-voce-contrataria",
+   "servicos"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/foto-retrato.jpg",
+   "/ilus/burnei-capa.jpg",
+   "/ilus/desaprenda.svg",
+   "/img/linkedin/as-vezes-preservar-a-cooperativa-exige-abrir-mao-dela.jpg",
+   "/img/linkedin/o-chefe-robo.jpg",
+   "/img/linkedin/o-relogio-que-a-lei-tirou-de-quem-lidera.jpg",
+   "/img/palestras/a-experiencia-do-dono.jpg",
+   "/img/palestras/burnout-sem-lados.jpg",
+   "/img/series/quem-voce-contrataria-mesa.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/mentoria/": {
+  "title": "Mentoria executiva e preparação individual | Sérgio Missão",
+  "ids": [
+   "ano",
+   "avaliacao",
+   "conteudo",
+   "entrevistas",
+   "mentoria",
+   "menu-button",
+   "nav",
+   "negociacao"
+  ],
+  "ext": [
+   "https://calendar.app.google/P4hFoDGgfbcVtn9u8",
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/img/series/quem-voce-contrataria-mesa.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/organizadores/": {
+  "title": "Materiais para organizadores | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/foto-palco.jpg",
+   "/foto-retrato.jpg",
+   "/ilus/desaprenda.svg",
+   "/img/palestras/a-experiencia-do-dono.jpg",
+   "/img/palestras/burnout-sem-lados.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/palestras/a-experiencia-do-dono/": {
+  "title": "A Experiência do Dono | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/img/palestras/a-experiencia-do-dono.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/palestras/burnout-sem-lados/": {
+  "title": "Burnout Sem Lados | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/ilus/burnei-capa.jpg",
+   "/img/palestras/burnout-sem-lados.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/palestras/desaprenda-a-liderar/": {
+  "title": "Desaprenda a Liderar | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/ilus/desaprenda.svg",
+   "/logo-sm.png"
+  ]
+ },
+ "/palestras/": {
+  "title": "Palestras para empresas e cooperativas | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/ilus/desaprenda.svg",
+   "/img/palestras/a-experiencia-do-dono.jpg",
+   "/img/palestras/burnout-sem-lados.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/posts/": {
+  "title": "Posts de Sérgio Missão | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7511367309882736640/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7512812834926452736/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7513196865115443201/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7513904026099470336/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7516084899859222528/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7521590826469122048/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7523339646962089984/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7524042076867719169/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7525853195689013248/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7526589188855750656/",
+   "https://www.linkedin.com/in/missao",
+   "https://www.linkedin.com/posts/missao_cx-lideranaexa-valores-share-7491188538387001344-T6ks/",
+   "https://www.linkedin.com/posts/missao_empreendedorismo-sicredi-somoscoop-share-7480570628543094784--qsz/",
+   "https://www.linkedin.com/posts/missao_gentileza-respeito-cuidado-share-7478591739835109376-k9YV/",
+   "https://www.linkedin.com/posts/missao_gestaeto-lideranaexa-valores-share-7487903828722212865-9gfV/",
+   "https://www.linkedin.com/posts/missao_lideranaexa-culturaorganizacional-gestaetodepessoas-share-7487899087548289024-BMwf/",
+   "https://www.linkedin.com/posts/missao_lideranaexa-culturaorganizacional-gestaetodepessoas-share-7489978976874971137-is2d/",
+   "https://www.linkedin.com/posts/missao_lideranaexa-lideranca-cultura-share-7453125000644976640-PM2I/",
+   "https://www.linkedin.com/posts/missao_lideranaexa-namissaeto-burnout-share-7478580530800705536-A6ML/"
+  ],
+  "imgs": [
+   "/img/linkedin/as-vezes-preservar-a-cooperativa-exige-abrir-mao-dela.jpg",
+   "/img/linkedin/o-chefe-robo.jpg",
+   "/img/linkedin/o-relogio-que-a-lei-tirou-de-quem-lidera.jpg",
+   "/img/linkedin/post-chef.jpg",
+   "/img/linkedin/post-cliente-ou-dono.jpg",
+   "/img/linkedin/post-retrovisor.jpg",
+   "/img/linkedin/post-terno.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/quem-voce-contrataria/": {
+  "title": "Quem você contrataria? | Sérgio Missão",
+  "ids": [
+   "ano",
+   "chefe-de-seguranca-corporativa",
+   "conteudo",
+   "diretor-comercial",
+   "diretor-de-estrategia",
+   "diretor-de-inovacao",
+   "diretor-juridico",
+   "lider-de-equipe",
+   "ponte-t",
+   "presidente-de-cooperativa",
+   "r1-t",
+   "r2-t",
+   "r3-t",
+   "r4-t",
+   "r5-t",
+   "r6-t",
+   "r7-t",
+   "titulo",
+   "wa-sim"
+  ],
+  "ext": [
+   "https://lnkd.in/p/dMdcH8rM",
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7514266412815757312/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7516426452226121728/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7518613007556308992/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7520791551971577856/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7525490994960728064/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7528095908740214784/",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "../logo-sm.png",
+   "img/chefe-de-seguranca-corporativa.jpg",
+   "img/diretor-comercial.jpg",
+   "img/diretor-de-estrategia.jpg",
+   "img/diretor-de-inovacao.jpg",
+   "img/diretor-juridico.jpg",
+   "img/lider-de-equipe.jpg",
+   "img/presidente-de-cooperativa.jpg"
+  ]
+ },
+ "/sobre/": {
+  "title": "Sobre Sérgio Missão | Sérgio Missão",
+  "ids": [
+   "ano",
+   "conteudo",
+   "menu-button",
+   "nav"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/foto-retrato.jpg",
+   "/logo-sm.png"
+  ]
+ },
+ "/treinamentos/": {
+  "title": "Treinamentos corporativos | Sérgio Missão",
+  "ids": [
+   "ano",
+   "comunicacao",
+   "conteudo",
+   "cooperativismo",
+   "cultura",
+   "lideranca",
+   "menu-button",
+   "nav",
+   "negociacao"
+  ],
+  "ext": [
+   "https://www.instagram.com/sergio.missao",
+   "https://www.linkedin.com/in/missao"
+  ],
+  "imgs": [
+   "/logo-sm.png"
+  ]
+ }
+}

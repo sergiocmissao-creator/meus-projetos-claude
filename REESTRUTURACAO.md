@@ -27,3 +27,21 @@ As URLs antigas com fragmentos são encaminhadas por `assets/site.js`. As rotas 
 O repositório não contém configuração da hospedagem ou fluxo de CI/deploy. A sessão Netlify acessível abriu onboarding, sem exibir o projeto responsável pelo domínio. Não criar novo projeto nem trocar DNS para contornar esse acesso: usar o projeto existente.
 
 O ambiente de execução bloqueou a abertura de servidor local, e o navegador bloqueou URLs `file:`. Verificação visual em desktop/celular e conferência das rotas no domínio precisam ocorrer em prévia HTTP ou no deploy autorizado. Verificações estáticas não substituem essas etapas. Commit no GitHub não comprova publicação.
+
+## Reformulação de novembro de 2026 (branch `reformulacao-2026-11`)
+
+Alternativa aprovada em 25/11/2026: navegação por serviço (Palestras, Mentoria, Consultoria, Cooperativismo, Conteúdos, Sobre + "Conversar com Sérgio"), com o índice editorial dentro de `/conteudos/`.
+
+- Prévia: `SITE_PREVIEW=1 python3 scripts/build_site.py` mostra os blocos "a preencher" (depoimentos, Casos, Mídia). **Antes de publicar no main, gerar sem a variável** (`python3 scripts/build_site.py`); `check_site.py` sem a variável falha se sobrar "a preencher".
+- `/cooperativas/` foi substituída por `/cooperativismo/` (301 em `_redirects` e na âncora `#cooperativas` da home, via `site.js`).
+- Itens do `editorial.json` aceitam o campo `tema` (Liderança e gestão; Pessoas e trabalho; Cultura e relacionamento; Cooperativismo e governança; Carreira e decisões). Sem o campo, o item entra em "Liderança e gestão".
+- `quem-voce-contrataria/index.html` continua editado à mão (rodadas); o cabeçalho e o rodapé entre os marcadores `cabecalho-comum` e `rodape-comum` são regravados pelo gerador.
+- Toda menção ao livro BURNEI! E agora? leva a https://burnei.com.br (decisão de 25/11/2026).
+- Primeira pessoa só nas falas assinadas do Cooperativismo (frase de abertura, frases das cadeiras, aviso da Assembleia Viva); demais textos institucionais em terceira pessoa (decisão de 25/11/2026).
+- Duração estimada de Burnout Sem Lados e Desaprenda a Liderar: 60 a 90 minutos (autorizada em 25/11/2026).
+- Consultoria: diagnóstico, acompanhamento e treinamento (confirmados em 25/11/2026).
+- `scripts/inventario_antes.json` guarda URLs e âncoras anteriores; `check_site.py` falha se alguma deixar de responder.
+
+## Próxima revisão: agendamento e pagamento
+
+Integrar o agendamento ao Calendário do Google Workspace e definir como receber pagamentos, principalmente para Mentorias, Avaliação de Desempenho e Preparação de Entrevistas. Links definitivos, valores e meio de pagamento serão definidos nessa etapa. Até lá, os botões "Agendar" continuam levando à agenda atual (`calendar.app.google/P4hFoDGgfbcVtn9u8`), e o fluxo Quem você contrataria? → AGENDAR ENTREVISTA → Como funciona a simulação foi mantido.
